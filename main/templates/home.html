@@ -1,0 +1,21 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Welcome to Confidante </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div> 
+            <ul>
+                <li> <a href = "{% static 'noreply.html' %}"> Log In </a> </li>
+                <li> <a href = "{% static 'noreply.html' %}"> Sign Up </a> </li>
+            </ul>
+        </div>
+        <h1> Welcome to Confidante </h1>
+        <hr>
+        <h2> Here you can make your own personal diary </h2>
+        <p> Privacy is our key. </p>
+    </body>
+</html>
