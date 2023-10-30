@@ -4,18 +4,24 @@
 <html>
     <head>
         <title> Welcome to Confidante </title>
-        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'home_style.css' %}">
     </head>
     <body>
-        <div> 
+        <div class = "normal"> 
             <ul>
                 <li> <a href = "{% static 'noreply.html' %}"> Log In </a> </li>
                 <li> <a href = "{% static 'noreply.html' %}"> Sign Up </a> </li>
+                <li class = "uni"> <a href = "https://pytextgame.godaddysites.com/"> News </a></li>
             </ul>
         </div>
-        <h1> Welcome to Confidante </h1>
-        <hr>
-        <h2> Here you can make your own personal diary </h2>
-        <p> Privacy is our key. </p>
+        <div class = "main">
+            <h1> Welcome to Confidante </h1>
+            <hr>
+            <h2> Here you can make your own personal diary </h2>
+            <p> Privacy is our key. </p>
+        </div>
+        <footer class = "notice"> 
+            <p> ©️ Confidante Himank Deka, 2023. Made in India.</p>
+        </footer>
     </body>
 </html>
