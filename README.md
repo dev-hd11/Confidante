@@ -36,6 +36,9 @@ python -m pip install django
 3. Download the latest release.
 4. More steps coming soon...
 
+## Copyright :
+See [COPYRIGHTS](./COPYRIGHTS.md)
+
 ## Release Notes :
 Releases coming soon...
 
