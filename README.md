@@ -9,6 +9,8 @@
 - Encrypted
 - For different users
 - Capture the moments of your life
+- Privacy
+- Styled with Bootstrap 5
 
 ## Alert :
 Project is currently under development. It will get ready soon.
