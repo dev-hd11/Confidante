@@ -1,0 +1,17 @@
+.body-bg {
+    background-image: url("./images/bg_home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fontAB {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 200px;
+    color: white;
+}
+
+.brnd-img {
+    width: 150px;
+    height: 60px;
+}
