@@ -44,7 +44,7 @@ py manage.py runserver 80
 ```
 6. Go to [localhost](127.0.0.1:80)
 
-**Note: This steps are based on the Pre View version**
+**Note: This steps are based on the Pre View version. You need to edit the secret key variable in the settings.py file.**
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
