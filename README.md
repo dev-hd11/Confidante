@@ -56,7 +56,7 @@ This release is a preview of the web UI. Not functional yet. This release has so
 
 **Patch Level: 2023.2.1.3**
 
-Version Code: 0.1.1
+Version Code: 0.1.2
 
 Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 
