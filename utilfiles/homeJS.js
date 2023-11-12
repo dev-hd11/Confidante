@@ -14,11 +14,22 @@ function change(code) {
     }
 }
 
-setInterval(getTime, 10000);
 
-function getTime() {
+
+setInterval(startup, 10000);
+
+function setDefault() {
+    document.getElementById("frst").className = "";
+    document.getElementById("scnd").className = "";
+    document.getElementById("thrd").className = "";
+    document.getElementById("frth").className = "";
+    document.getElementById("six").className = "";
+}
+
+function startup() {
+    setDefault();
     const current = new Date();
-    var str_form = String(current.getMinutes())
+    var str_form = String(current.getMinutes());
     document.getElementById("time").innerText = `${(current.getHours() > 12) ? current.getHours() - 12 : current.getHours()}:${(current.getMinutes() < 10) ? "0" + str_form : current.getMinutes()}`;
 }
 
