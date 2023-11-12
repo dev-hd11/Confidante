@@ -21,6 +21,7 @@
     margin-bottom: 5px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
+    transition: 2s;
 }
 
 .spacer {
@@ -30,5 +31,24 @@
 .footerF {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    height: 40px;
+    height: 30px;
+}
+
+.footerF p {
+    margin-top: -10px;
+}
+
+.brnd-img:hover {
+    background-color: white;
+    color: black;
+}
+
+.timeF {
+    margin-right: 15px;
+    margin-top: 7px;
+    color: white;
+}
+
+.fontOH {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
