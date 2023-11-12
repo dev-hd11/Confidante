@@ -61,4 +61,4 @@ Version Code: 0.1.1
 Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 
 ## Contributing :
-Sorry, we are not accepting any pull requests.
+See [CONTRIBUTING](./CONTRIBUTING.md).
