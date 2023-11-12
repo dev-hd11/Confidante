@@ -2,6 +2,8 @@
 <h1> Confidante </h1>
 </div>
 
+![Logo](./static/images/logo1.png)
+
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Features :
