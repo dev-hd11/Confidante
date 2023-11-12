@@ -2,7 +2,6 @@
 <h1> Confidante </h1>
 </div>
 
-![Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheconfidantespirits.com%2F&psig=AOvVaw3LPVobq0cexo-7eNqFYqeA&ust=1699882880362000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMifx6vLvoIDFQAAAAAdAAAAABAE)
 
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
