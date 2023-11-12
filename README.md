@@ -54,7 +54,7 @@ See [COPYRIGHTS](./COPYRIGHTS.md)
 ### Release Polaris Pre View :
 This release is a preview of the web UI. Not functional yet. This release has some UI components and non-commercial. Please wait till we release our stable version.
 
-**Patch Level: 2023.1.0.2**
+**Patch Level: 2023.2.1.3**
 
 Version Code: 0.1.1
 
