@@ -27,9 +27,9 @@ cd myenv
 ./Scripts/activate.bat
 ``` 
 
-2. Install django.<br>
+2. Install requirements.<br>
 ```shell
-python -m pip install django
+python -m pip install -r requirements.txt
 
 ```
 
