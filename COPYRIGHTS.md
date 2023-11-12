@@ -2,7 +2,8 @@
 ©️ 2023 (Whole Project), Himank Deka \([@dev-hd11](https://www.github.com/dev-hd11)\) 
 
 # Information :
-- This project's webpages are styled with Bootstrap 5.
+- This project's webpages are styled with a mixture of Bootstrap 5, W3.CSS and some of our own **copyright** CSS files.
+- This project uses Bootstrap 5 JavaScript along with our own **copyright** JavaScript.
 
 Confidante Copyright (C) 2023  Himank Deka
 
