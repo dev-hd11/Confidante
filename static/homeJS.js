@@ -11,6 +11,8 @@ function change(code) {
         animateAbt();
     } else if (code == 6) {
         document.getElementById("six").className = "spinner-grow spinner-grow-sm";
+    } else if (code == 7) {
+        document.getElementById("seven").className = "spinner-grow spinner-grow-sm";
     }
 }
 
@@ -24,6 +26,7 @@ function setDefault() {
     document.getElementById("thrd").className = "";
     document.getElementById("frth").className = "";
     document.getElementById("six").className = "";
+    document.getElementById("seven").className = "";
 }
 
 function getTime() {

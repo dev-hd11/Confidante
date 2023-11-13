@@ -11,6 +11,8 @@ function change(code) {
         animateAbt();
     } else if (code == 6) {
         document.getElementById("six").className = "spinner-grow spinner-grow-sm";
+    } else if (code == 7) {
+        document.getElementById("seven").className = "spinner-grow spinner-grow-sm";
     }
 }
 
@@ -24,12 +26,13 @@ function setDefault() {
     document.getElementById("thrd").className = "";
     document.getElementById("frth").className = "";
     document.getElementById("six").className = "";
+    document.getElementById("seven").className = "";
 }
 
-function startup() {
+function getTime() {
     setDefault();
     const current = new Date();
-    var str_form = String(current.getMinutes());
+    var str_form = String(current.getMinutes())
     document.getElementById("time").innerText = `${(current.getHours() > 12) ? current.getHours() - 12 : current.getHours()}:${(current.getMinutes() < 10) ? "0" + str_form : current.getMinutes()}`;
 }
 
