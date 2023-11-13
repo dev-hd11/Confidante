@@ -39,13 +39,18 @@ python -m pip install -r requirements.txt
 ```shell
 py manage.py collectstatic
 ```
-5. Run the sever.
+5. Make migrations.
+```shell
+py manage.py makemigrations
+py manage.py migrate
+```
+6. Run the sever.
 ```shell
 py manage.py runserver 80
 ```
-6. Go to [localhost](127.0.0.1:80)
+7. Go to [localhost](127.0.0.1:80)
 
-**Note: This steps are based on the Pre View version. You need to edit the secret key variable in the settings.py file.**
+**Note: This steps are based on the Pre View 2 version. You need to edit the secret key variable in the settings.py file.**
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
@@ -60,6 +65,9 @@ This release is a preview of the web UI. Not functional yet. This release has so
 Version Code: 0.1.2
 
 Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
+
+### Release Polaris i1 Pre View 2 :
+
 
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
