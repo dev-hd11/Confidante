@@ -52,7 +52,7 @@ See [COPYRIGHTS](./COPYRIGHTS.md)
 
 ## Release Notes :
 
-### Release Polaris Pre View :
+### Release Polaris i1 Pre View :
 This release is a preview of the web UI. Not functional yet. This release has some UI components and non-commercial. Please wait till we release our stable version.
 
 **Patch Level: 2023.2.1.3**

@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The following versions are currently eligible for security updates.
+The following versions are currently eligible for security updates. If you are not using one of the supported versions, then please upgrade.
 
 | Version Name | Version Code | Supported          |
 |--------------| ------- | ------------------ |
