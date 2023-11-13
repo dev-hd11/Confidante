@@ -67,6 +67,18 @@ Version Code: 0.1.2
 Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 
 ### Release Polaris i1 Pre View 2 :
+This release contains database upgrades with a few UI improvement. This release is also a pre-view. Please wait for the full release.
+
+[ADD] Staff Portal: A lightweight alternative to Django Admin. Contains features to view the database.
+[ENHANCED] UI Components: Some new UI components in the homepage.
+[ADD] Database Models: New database, with tables for authentication system and diary entries.
+[FIX] Security Update: Security tokens updated.
+
+Version Code: 0.2.1
+
+ **Patch level: 2023.3.1.4**
+
+**Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.1.1-p...0.2.0
 
 
 ## Contributing :
