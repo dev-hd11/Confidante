@@ -83,3 +83,6 @@ Version Code: 0.2.1
 
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
+
+## Support
+Having problems? Search for it in [NEWS](./NEWS.md) or in *Issues* or raise your own *issue*.
