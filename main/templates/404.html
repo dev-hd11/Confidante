@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{% static 'styler.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = "stylesheet" href = "{% static 'err_styler.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'homeJS.js' %}"></script>
 
     <title> Page Not Found! </title>
 </head>
 
-<body>
+<body onload = "getTime(0)" class = "back-img-err">
     {% include 'navigate.html' %}
     <div class = "container-fluid mt-4 p-5 bg-primary text-white rounded" id = "jmb">
         <h1> Error: 404 </h1>

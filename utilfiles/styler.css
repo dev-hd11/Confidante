@@ -35,6 +35,10 @@
     height: 30px;
 }
 
+.scrollable {
+    overflow: auto;
+}
+
 .footerF p {
     margin-top: -10px;
 }

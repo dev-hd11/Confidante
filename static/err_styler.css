@@ -1,0 +1,6 @@
+.back-img-err {
+    background-image: url("./images/bg_home.jpg");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+}

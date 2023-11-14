@@ -18,9 +18,12 @@ function change(code) {
 
 
 
-setInterval(startup, 10000);
+setInterval(getTime, 10000);
 
-function setDefault() {
+function setDefault(code) {
+    if (code == 0) {
+        return;
+    }
     document.getElementById("frst").className = "";
     document.getElementById("scnd").className = "";
     document.getElementById("thrd").className = "";
@@ -29,8 +32,8 @@ function setDefault() {
     document.getElementById("seven").className = "";
 }
 
-function getTime() {
-    setDefault();
+function getTime(code) {
+    setDefault(code);
     const current = new Date();
     var str_form = String(current.getMinutes())
     document.getElementById("time").innerText = `${(current.getHours() > 12) ? current.getHours() - 12 : current.getHours()}:${(current.getMinutes() < 10) ? "0" + str_form : current.getMinutes()}`;

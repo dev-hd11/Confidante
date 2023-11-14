@@ -2,69 +2,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            var password = window.prompt("Enter Password:");
-
-            if (password == "dj832") {
-                console.log("Connection allowed to pass!");
-            } else {
-                window.location.href = "/";
-            }
-        </script>
+        <script src="{% static 'staffJs.js' %}"></script>
         <title> Staff Portal </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="{% static 'styler.css' %}" rel = "stylesheet">
+        <link href = "{% static 'staff_style.css' %}" rel = "stylesheet">
         <script src="{% static 'homeJS.js' %}"></script>
         <link href="https://www.w3schools.com/w3css/4/w3.css" rel = "stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
-    <body>
+    <body class = "back-img" onload = "getTime(0)">
         {% include 'navigate.html' %}
-        <div class = "container-fluid">
-            <h1 style = "text-align: center;"> Users Table</h1>
-            <table class = "table table-bordered table-hover" style="text-align: center;">
-                <thead>
-                    <tr>
-                        <th> User </th>
-                        <th> Password </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for x in users_all %}
+        <div class = "container-block scrollable">
+            <div class = "container-fluid">
+                <hr>
+                <h1 style = "text-align: center;"> Users Table</h1>
+                <hr>
+                <table class = "table table-bordered table-hover" style="text-align: center;">
+                    <thead>
                         <tr>
-                            <td> {{x.usname}} </td>
-                            <td> {{x.passwd}} </td>
+                            <th> ID </th>
+                            <th> User </th>
+                            <th> Password </th>
                         </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        <hr>
-        <div class = "container-fluid">
-            <h1 style = "text-align: center;"> Entries </h1>
-            <table class = "table table-bordered table-hover" style="text-align: center;">
-                <thead>
-                    <tr>
-                        <th> Title </th>
-                        <th> Content </th>
-                        <th> Date </th>
-                        <th> Writter </th>
-                        <th> Starred </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for x in entry_give %}
+                    </thead>
+                    <tbody>
+                        {% for x in users_all %}
+                            <tr>
+                                <td> {{x.id}} </td>
+                                <td> {{x.usname}} </td>
+                                <td> {{x.passwd}} </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class = "container-fluid scrollable">
+                <hr>
+                <h1 style = "text-align: center;"> Entries </h1>
+                <hr>
+                <table class = "table table-bordered table-hover" style="text-align: center;">
+                    <thead>
                         <tr>
-                            <td> {{x.title}} </td>
-                            <td> {{x.content}} </td>
-                            <td> {{x.date}} </td>
-                            <td> {{x.holder.usname}} </td>
-                            <td> {% if x.is_starred %} ✔️ {% else %} ❌ {% endif %}</td>
+                            <th> ID </th>
+                            <th> Title </th>
+                            <th> Content </th>
+                            <th> Date </th>
+                            <th> Writter </th>
+                            <th> Starred </th>
                         </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {% for x in entry_give %}
+                            <tr>
+                                <td> {{x.id}} </td>
+                                <td> <a href = "http://localhost:8000/get_en/{{x.id}}">{{x.title}}</a> </td>
+                                <td> {{x.content}} </td>
+                                <td> {{x.date}} </td>
+                                <td> {{x.holder.usname}} </td>
+                                <td> <a href = "http://localhost:8000/star/{{x.id}}">{% if x.is_starred %} ✔️ {% else %} ❌ {% endif %}</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <br><br><br>
+            </div>
         </div>
         {% include 'footer.html' %}        
     </body>

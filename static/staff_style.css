@@ -1,0 +1,15 @@
+.back-img {
+    background-image: url("./images/bg_home.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+}
+
+.container-block {
+    margin: 20px 20px 10px;
+    background-color: antiquewhite;
+}
+
+.scrollable {
+    overflow: auto;
+}
