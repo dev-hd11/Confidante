@@ -6,14 +6,14 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Table of Content :
-1. [Features](#features)
-2. [Alert](#alert)
-3. [Dependencies](#dependencies)
-4. [Installation](#installation)
-5. [Copyrights](#copyrights)
-6. [Release Notes](#release-notes)
-7. [Contributing](#contributing)
-8. [Support](#support)
+1. [Features](#features-)
+2. [Alert](#alert-)
+3. [Dependencies](#dependencies-)
+4. [Installation](#installation-)
+5. [Copyrights](#copyrights-)
+6. [Release Notes](#release-notes-)
+7. [Contributing](#contributing-)
+8. [Support](#support-)
 
 ## Features :
 - Secure
