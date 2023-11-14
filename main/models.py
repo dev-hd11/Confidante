@@ -11,7 +11,7 @@ class User(models.Model) :
 class Entry(models.Model) :
     title = models.CharField(max_length=100)
     content = models.TextField(max_length=250)
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now=True, editable=False)
     is_starred = models.BooleanField(default=False)
     holder = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
 

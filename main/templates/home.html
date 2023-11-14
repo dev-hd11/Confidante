@@ -25,10 +25,13 @@
             <span id="frst"></span>
             Get Started
         </a>
-        <a href="./staff" class="btn btn-primary btn-lg" onclick="change(2)" id = "btn-2">
-            <span id="scnd"></span>
-            Staff
-        </a>
+        <div class="w3-dropdown-hover">
+            <button class="btn btn-primary btn-lg dropdown-toggle">Staff</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="./staff" class="w3-bar-item w3-button">Confidante Staff Portal <span class = "badge text-bg-secondary">Beta</span></a>
+                <a href="./admin" class="w3-bar-item w3-button">Django Admin</a>
+            </div>
+        </div>
     </div>
 
     {% include 'footer.html' %}

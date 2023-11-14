@@ -62,7 +62,7 @@
                                 <td> {{x.content}} </td>
                                 <td> {{x.date}} </td>
                                 <td> {{x.holder.usname}} </td>
-                                <td> <a href = "http://localhost:8000/star/{{x.id}}">{% if x.is_starred %} ✔️ {% else %} ❌ {% endif %}</a></td>
+                                <td> <a href = "http://localhost:8000/star/{{x.id}}" style="text-decoration: none;">{% if x.is_starred %} ✔️ {% else %} ❌ {% endif %}</a></td>
                             </tr>
                         {% endfor %}
                     </tbody>

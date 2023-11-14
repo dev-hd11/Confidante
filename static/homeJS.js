@@ -25,7 +25,6 @@ function setDefault(code) {
         return;
     }
     document.getElementById("frst").className = "";
-    document.getElementById("scnd").className = "";
     document.getElementById("thrd").className = "";
     document.getElementById("frth").className = "";
     document.getElementById("six").className = "";
