@@ -54,13 +54,21 @@ py manage.py collectstatic
 py manage.py makemigrations
 py manage.py migrate
 ```
-6. Run the sever.
+6. Create an admin account.
+```shell
+py manage.py createsuperuser
+```
+7. Run the sever.
 ```shell
 py manage.py runserver 80
 ```
-7. Go to [localhost](127.0.0.1:80)
+8. Go to [localhost](127.0.0.1:80)
+9. Clean up the files while closing.
+```shell
+py cleanup.py
+```
 
-**Note: This steps are based on the Pre View 2 version. You need to edit the secret key variable in the settings.py file.**
+**Note: This steps are based on the RC1 version. You need to edit the secret key variable in the settings.py file.**
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
@@ -79,7 +87,7 @@ Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 ### Release Polaris i1 Pre View 2 :
 This release contains database upgrades with a few UI improvement. This release is also a pre-view. Please wait for the full release.
 
-[ADD] Staff Portal: A lightweight alternative to Django Admin. Contains features to view the database.<br>
+[ADD] Staff Portal (v1): A lightweight alternative to Django Admin. Contains features to view the database. [BETA] <br>
 [ENHANCED] UI Components: Some new UI components in the homepage.<br>
 [ADD] Database Models: New database, with tables for authentication system and diary entries.<br>
 [FIX] Security Update: Security tokens updated.<br>
@@ -90,6 +98,25 @@ Version Code: 0.2.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.1.1-p...0.2.0
 
+### Release Ploaris i1 RC1 :
+This release is a part of the Pre-Views. This series let's you explore the project which is in the last phase of development. Full release coming soon.
+
+[FIX] Bug fixes in JSON auth system.<br>
+[ADD] /star/ : Path for starring an entry.<br>
+[ADD] /get_en/ : Path for viewing an entry.<br>
+[ADD] /delete/ : Path for deleting an entry.<br>
+[UPDATE] Staff Portal (v1.4.0) : An updated version of Staff Portal.<br>
+[ADD] Confidante UPS (v1) : A system that reserves URLs for authenticated users only. [BETA]<br>
+[DEPRECATED] Staff Portal - Star System changed. <br>
+[DEPRECATED] Staff Portal (v1) has been removed.<br>
+[ENHANCED] UI components on all pages improved.<br>
+[ADD] Confidante JAL (v1.0.3) : Python library for Confidante UPS. <br>
+
+**Patch level : 2023.9.3.12**
+
+Version Code: 0.5.1
+
+**Full Changelog**: https://github.com/dev-hd11/Confidante/compare/0.2.0...v0.5.1
 
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
