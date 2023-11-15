@@ -35,10 +35,10 @@ function setDefault(code) {
 }
 
 function getTime(code) {
-    setDefault(code);
     const current = new Date();
     var str_form = String(current.getMinutes())
     document.getElementById("time").innerText = `${(current.getHours() > 12) ? current.getHours() - 12 : current.getHours()}:${(current.getMinutes() < 10) ? "0" + str_form : current.getMinutes()}`;
+    setDefault(code);
 }
 
 function sleep(time) {

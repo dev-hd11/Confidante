@@ -28,3 +28,9 @@ def set_data(key, val) :
     json.dump(data_dict, file, indent=4)
     file.close()
 
+def get_us_id() :
+    global data_dict
+    file = open("./data.json", "r")
+    data_dict = json.load(file)
+
+    return data_dict["us_id"]
