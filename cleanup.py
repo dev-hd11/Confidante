@@ -1,3 +1,6 @@
+"""
+(c) 2023, Himank Deka.
+"""
 import json
 
 file = open("./data.json", "w")

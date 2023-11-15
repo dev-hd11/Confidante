@@ -1,3 +1,6 @@
+/*
+(c) 2023, Himank Deka.
+*/
 function change(code) {
     if (code == 1) {
         document.getElementById("frst").className = "spinner-grow spinner-grow-sm";

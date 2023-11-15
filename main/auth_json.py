@@ -1,3 +1,6 @@
+"""
+(c) 2023, Himank Deka.
+"""
 import json
 
 data_dict = {}

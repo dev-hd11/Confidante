@@ -1,3 +1,6 @@
+/*
+(c) 2023, Himank Deka.
+*/
 var password = window.prompt("Enter Password:");
 
 if (password == "dj832") {
