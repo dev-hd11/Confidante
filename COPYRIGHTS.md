@@ -1,5 +1,5 @@
 # Copyrights :
-©️ 2023 (Whole Project), Himank Deka \([@dev-hd11](https://www.github.com/dev-hd11)\) 
+©️ 2023 (Whole Project), Himank Deka \([@dev-hd11](https://www.github.com/dev-hd11)\) <br>
 All rights reserved.
 
 # Information :
