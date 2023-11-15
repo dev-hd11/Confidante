@@ -1,5 +1,6 @@
 # Copyrights :
 ©️ 2023 (Whole Project), Himank Deka \([@dev-hd11](https://www.github.com/dev-hd11)\) 
+All rights reserved.
 
 # Information :
 - This project's webpages are styled with a mixture of Bootstrap 5, W3.CSS and some of our own **copyright** CSS files.
