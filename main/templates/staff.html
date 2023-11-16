@@ -48,7 +48,7 @@
                         {% for x in users_all %}
                             <tr>
                                 <td> {{x.id}} </td>
-                                <td> {{x.usname}} </td>
+                                <td> <a href = "http://localhost:8000/inside/user/{{x.id}}">{{x.usname}}</a> </td>
                                 <td> {{x.passwd}} </td>
                             </tr>
                         {% endfor %}

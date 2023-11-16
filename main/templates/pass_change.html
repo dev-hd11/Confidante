@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "charset" content="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "author" content="Himank Deka">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'styler.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel = "stylesheet" href = "{% static 'pass_styler.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'homeJS.js' %}"></script>
+        <title> Password Reset </title>
+    </head>
+
+    <body class = "back-img-frm">
+        {% include 'navigate.html' %}
+        <div class = "container-block text-bg-dark">
+            <h1> Password Reset </h1><hr>
+            <h4> Please enter new password: </h4>
+            <form action = "{% url 'pass_chgn' %}" method = "post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <div class="form-floating mb-3 mt-3">
+                    <input type="password" class="form-control" id="passwd" placeholder="Enter password" name="passwd" required>
+                    <label for="passwd">Password</label>
+                </div>     
+                <input type = "submit" class = "btn btn-primary">
+            </form>
+        </div>
+        {% include 'footer.html' %}
+    </body>
