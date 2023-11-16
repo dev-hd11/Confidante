@@ -60,9 +60,9 @@ py manage.py createsuperuser
 ```
 7. Run the sever.
 ```shell
-py manage.py runserver 80
+py manage.py runserver
 ```
-8. Go to [localhost](127.0.0.1:80)
+8. Go to [localhost](127.0.0.1:8000)
 9. Clean up the files while closing.
 ```shell
 py cleanup.py
