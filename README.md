@@ -1,12 +1,13 @@
 <div align = "center">
 <h1> Confidante </h1>
 </div>
-
+<div align = "center">
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/dev-hd11/Confidante)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
 ![GitHub License](https://img.shields.io/github/license/dev-hd11/Confidante)
 ![GitHub top language](https://img.shields.io/github/languages/top/dev-hd11/Confidante)
 ![GitHub Latest Release](https://img.shields.io/badge/latest_release-Polaris%20i1%20CARBON-green)
+</div>
 
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
