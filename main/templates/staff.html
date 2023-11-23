@@ -49,7 +49,7 @@
                             <tr>
                                 <td> {{x.id}} </td>
                                 <td> <a href = "http://localhost:8000/inside/user/{{x.id}}">{{x.usname}}</a> </td>
-                                <td> {{x.passwd}} </td>
+                                <td> <a href = "http://localhost:8000/inside/user/{{x.id}}/password-reset">{{x.passwd}}</a> </td>
                             </tr>
                         {% endfor %}
                     </tbody>

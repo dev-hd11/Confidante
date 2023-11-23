@@ -7,7 +7,7 @@ urlpatterns = [
     path('get_en/<int:en_id>', views.view_entry, name="view_entry"),
     path('star/<int:en_id>', views.star_en, name="star_en"),
     path('delete/<int:en_id>', views.delete, name="delete"),
-    path('set_stff/', views.set_data, name = "set_data"),
+    path('set_stff/', views.set_env_var, name = "set_env_var"),
     path('inside/user/<int:us_id>', views.view_acc, name = "view_user"),
-    path('inside/user/<int:us_id/password-reset', views.pass_chgn, name = "pass_chgn")
+    path('inside/user/<int:us_id>/password-reset', views.pass_chgn, name = "pass_chgn")
 ]

@@ -4,6 +4,11 @@
 .back-img-frm {
     background-image: url("./images/bg_home.jpg");
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 160%;
     background-position: center;
+}
+
+.container-block {
+    margin: 10px;
+    padding: 16px;
 }

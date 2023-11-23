@@ -37,6 +37,9 @@ def view_acc(request, us_id) :
     
     else :
       return Http404()
+    
+  else :
+    return HttpResponseRedirect("http://localhost:8000/")
 
 
 def home(request) :
@@ -45,19 +48,26 @@ def home(request) :
   return HttpResponse(template.render())
 
 def staff(request) :
-  user_all = User.objects.all().values()
-  entry_give = Entry.objects.all()
-  templ = loader.get_template("staff.html")
-  context = {
-    'users_all' : user_all,
-    'entry_give' : entry_give,
-    'one_redirect' : one_redirect
-  }
+  global one_redirect
+  if one_redirect :
+    user_all = User.objects.all().values()
+    entry_give = Entry.objects.all()
+    templ = loader.get_template("staff.html")
+    context = {
+      'users_all' : user_all,
+      'entry_give' : entry_give,
+      'one_redirect' : one_redirect
+    }
 
-  return HttpResponse(templ.render(context, request))
+    return HttpResponse(templ.render(context, request))
+  
+  else :
+    return HttpResponseRedirect("http://localhost:8000/set_stff")
 
 def set_env_var(request) :
+  global one_redirect
   set_data("is_staff", True)
+  one_redirect = True
   return HttpResponseRedirect("http://localhost:8000/staff")
   
   
@@ -152,9 +162,15 @@ def pass_chgn(request, us_id) :
       us.passwd = d_set
       us.save()
 
-      return HttpResponseRedirect("http://localhost:8000/staff/")
+      return HttpResponseRedirect(f"http://localhost:8000/inside/user/{us_id}")
     
     else :
       form_p = PassResetForm()
 
-    return HttpResponse(templ.render(request, {'form' : form_p}))
+  
+  context = {
+    'us_id' : us_id,
+    'form_p' : form_p
+  }
+  print(type(context))
+  return HttpResponse(templ.render(context, request))
