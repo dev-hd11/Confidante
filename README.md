@@ -2,11 +2,19 @@
 <h1> Confidante </h1>
 </div>
 
-![GitHub release (with filter)](https://img.shields.io/github/v/release/dev-hd11/Confidante)
+[![GitHub version](https://badge.fury.io/gh/dev-hd11%2FConfidante.svg)](https://badge.fury.io/gh/dev-hd11%2FConfidante)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
 ![GitHub License](https://img.shields.io/github/license/dev-hd11/Confidante)
 ![GitHub top language](https://img.shields.io/github/languages/top/dev-hd11/Confidante)
-![GitHub Latest Release](https://img.shields.io/badge/latest_release-Polaris%20i1%20CARBON-green)
+![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
+![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
+![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=flat)
+![SQLite Badge](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=fff&style=flat)
+![Windows 11 Badge](https://img.shields.io/badge/Windows%2011-0078D4?logo=windows11&logoColor=fff&style=flat)
+![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat)
+![GitHub tag checks state](https://img.shields.io/github/checks-status/dev-hd11/Confidante/v0.5.1)
+
 
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
