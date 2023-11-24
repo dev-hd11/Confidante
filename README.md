@@ -98,7 +98,7 @@ Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 This release contains database upgrades with a few UI improvement. This release is also a pre-view. Please wait for the full release.
 
 [ADD] Staff Portal (v1): A lightweight alternative to Django Admin. Contains features to view the database. [BETA] <br>
-[ENHANCED] UI Components: Some new UI components in the homepage.<br>
+[UPDATE] UI Components: Some new UI components in the homepage.<br>
 [ADD] Database Models: New database, with tables for authentication system and diary entries.<br>
 [FIX] Security Update: Security tokens updated.<br>
 
@@ -111,16 +111,15 @@ Version Code: 0.2.1
 ### Release Ploaris i1 RC1 :
 This release is a part of the Pre-Views. This series let's you explore the project which is in the last phase of development. Full release coming soon.
 
-[FIX] Bug fixes in JSON auth system.<br>
+[FIX] Bug fixes in Confidante UPS.<br>
 [ADD] /star/ : Path for starring an entry.<br>
 [ADD] /get_en/ : Path for viewing an entry.<br>
 [ADD] /delete/ : Path for deleting an entry.<br>
-[UPDATE] Staff Portal (v1.4.0) : An updated version of Staff Portal.<br>
-[ADD] Confidante UPS (v1) : A system that reserves URLs for authenticated users only. [BETA]<br>
+[UPDATE] Staff Portal 2 : An updated version of Staff Portal.<br>
+[ADD] Confidante UPS V1 : A system that reserves URLs for authenticated users only. [BETA]<br>
 [DEPRECATED] Staff Portal - Star System changed. <br>
-[DEPRECATED] Staff Portal (v1) has been removed.<br>
-[ENHANCED] UI components on all pages improved.<br>
-[ADD] Confidante JAL (v1.0.3) : Python library for Confidante UPS. <br>
+[UPDATE] UI components on all pages improved.<br>
+[ADD] Confidante JAL V1 : Python library for Confidante UPS. <br>
 
 **Patch level : 2023.9.3.12**
 
