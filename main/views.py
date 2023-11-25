@@ -6,15 +6,16 @@ from .models import User, Entry
 from .auth_json import *
 from .forms import PassResetForm
 from django.shortcuts import render
-one_redirect = False
+one_redirect = 0
 
 def view_acc(request, us_id) :
   temp = is_pre_init()
-
   if temp != None :
+    print("Redirected!")
     return temp
-  
+
   elif is_staff() :
+    print("allowed!")
     us = get_object_or_404(User, id = us_id)
     templ = loader.get_template("get_entry.html")
     context = {
@@ -25,6 +26,7 @@ def view_acc(request, us_id) :
     return HttpResponse(templ.render(context, request))
   
   elif is_signed() :
+    print("allowed!")
     us = get_object_or_404(User, id = us_id)
     if us.holder.id == get_us_id() :
       templ = loader.get_template("get_entry.html")
@@ -36,9 +38,11 @@ def view_acc(request, us_id) :
       return HttpResponse(templ.render(context, request))
     
     else :
+      print("not found!")
       return Http404()
     
   else :
+    print("Redirected 2!")
     return HttpResponseRedirect("http://localhost:8000/")
 
 
@@ -48,26 +52,31 @@ def home(request) :
   return HttpResponse(template.render())
 
 def staff(request) :
-  global one_redirect
-  if one_redirect :
+  temp = is_pre_init()
+
+  if temp != None :
+    return temp
+  
+  else :
+    global one_redirect
     user_all = User.objects.all().values()
     entry_give = Entry.objects.all()
     templ = loader.get_template("staff.html")
+    print(one_redirect)
     context = {
       'users_all' : user_all,
       'entry_give' : entry_give,
-      'one_redirect' : one_redirect
+      'myvar' : one_redirect
     }
 
     return HttpResponse(templ.render(context, request))
-  
-  else :
-    return HttpResponseRedirect("http://localhost:8000/set_stff")
+    
 
 def set_env_var(request) :
   global one_redirect
+  print("got here")
   set_data("is_staff", True)
-  one_redirect = True
+  one_redirect = 1
   return HttpResponseRedirect("http://localhost:8000/staff")
   
   
