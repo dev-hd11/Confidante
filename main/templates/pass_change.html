@@ -21,7 +21,6 @@
             <h4> Please enter new password: </h4>
             <form action = "{% url 'pass_chgn' us_id=us_id%}" method = "post">
                 {% csrf_token %}
-                {{form.as_p}}
                 <div class="form-floating mb-3 mt-3">
                     <input type="password" class="form-control" id="passwd" placeholder="Password" name="passwd" required>
                     <label for="passwd">Password</label>

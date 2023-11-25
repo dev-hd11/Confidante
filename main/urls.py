@@ -9,5 +9,6 @@ urlpatterns = [
     path('delete/<int:en_id>', views.delete, name="delete"),
     path('set_stff/', views.set_env_var, name = "set_env_var"),
     path('inside/user/<int:us_id>', views.view_acc, name = "view_user"),
-    path('inside/user/<int:us_id>/password-reset', views.pass_chgn, name = "pass_chgn")
+    path('inside/user/<int:us_id>/password-reset', views.pass_chgn, name = "pass_chgn"),
+    path('inside/user/profile/<str:auth_code>', views.getUP, name = "getUP")
 ]

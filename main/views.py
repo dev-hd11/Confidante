@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from django.template import loader
 from .models import User, Entry
 from .auth_json import *
-from .forms import PassResetForm
+from .forms import PassResetForm, AuthUserForm
 from django.shortcuts import render
 one_redirect = 0
 
@@ -28,7 +28,7 @@ def view_acc(request, us_id) :
   elif is_signed() :
     print("allowed!")
     us = get_object_or_404(User, id = us_id)
-    if us.holder.id == get_us_id() :
+    if us.id == get_us_id() :
       templ = loader.get_template("get_entry.html")
       context = {
         'type' : 'user_pg',
@@ -75,7 +75,7 @@ def staff(request) :
 def set_env_var(request) :
   global one_redirect
   print("got here")
-  set_data("is_staff", True)
+  set_data(["is_staff"], [True])
   one_redirect = 1
   return HttpResponseRedirect("http://localhost:8000/staff")
   
@@ -183,3 +183,43 @@ def pass_chgn(request, us_id) :
   }
   print(type(context))
   return HttpResponse(templ.render(context, request))
+
+def getUP(request, auth_code) :
+  temp = is_pre_init()
+
+  if temp != None :
+    return temp
+  
+  templ = loader.get_template("user_profile.html")
+  print(auth_code)
+  form_auth = None
+  if not is_signed() :
+    print("Not signed")
+    if auth_code == "lg":
+      if request.method == "POST" :
+        all_users = User.objects.all()
+        print("All usernames:", [user.usname for user in all_users])
+
+        form_auth = AuthUserForm(request.POST)
+        if form_auth.is_valid() :
+          print(form_auth.cleaned_data["usname"], form_auth.cleaned_data["passwd"])
+          try:
+            user = User.objects.get(usname=form_auth.cleaned_data["usname"], passwd=form_auth.cleaned_data["passwd"])
+          except User.DoesNotExist:
+              return HttpResponse("Invalid Credentials")
+          
+          set_data(["user_id", "is_signed"], [user.id, True])
+
+          print(is_signed())
+          print(get_us_id())
+          return HttpResponseRedirect(f"http://localhost:8000/inside/user/{get_us_id()}")
+  # DEBUG
+      else :
+        form_auth = AuthUserForm()
+          
+      context = {
+        "auth" : 0,
+        "form" : form_auth
+      }
+
+      return HttpResponse(templ.render(context, request))

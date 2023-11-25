@@ -1,0 +1,55 @@
+<!--
+    (c) 2023, Himank Deka.
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if auth == 0 %}
+            <title> CAuth User - Verification </title>
+        {% else %}
+            <title> Hello </title>
+        {% endif %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'styler.css' %}" rel = "stylesheet">
+        <script src="{% static 'homeJS.js' %}"></script>
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel = "stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    {% if auth == 0 %}
+        <body class = "w3-container w3-light-grey">
+            {% include 'navigate.html' %}
+            <form class = "w3-display-middle w3-card-4" method = "post" action = "{% url 'getUP' auth_code='lg' %}" style = "padding: 16px;">
+                {% csrf_token %}
+                <h1 style = "font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class = "text-dark w3-center">
+                    Verify your Identity
+                </h1>
+                <div class = "w3-row w3-section">
+                    <div class = "w3-col" style = "width: 50px;"><i class = "w3-xxlarge fa fa-user"></i></div>
+                    <div class = "w3-rest">
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="usname" placeholder="Username" name="usname">
+                            <label for="usname">Username</label>
+                        </div>
+                    </div>
+                </div>
+                <div class = "w3-row w3-section">
+                    <div class = "w3-col" style = "width: 50px;"><i class = "w3-xxlarge fa fa-key"></i></div>
+                    <div class = "w3-rest">
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="password" class="form-control" id="passwd" placeholder="Enter ID" name="passwd">
+                            <label for="passwd">Password </label>
+                        </div>
+                    </div>
+                </div>
+                <button type = "submit" class = "btn btn-outline-success w3-block">Verify <span class = "fa fa-arrow-right"></span></button>
+                
+            </form>
+            {% include 'footer.html' %}
+        </body>
+
+    {% endif %}
+</html>

@@ -31,10 +31,12 @@ def is_staff() :
     
     return data_dict["is_staff"]
 
-def set_data(key, val) :
+def set_data(keys, vals) :
     file = open("./data.json", "w")
     data_dict = {"is_staff" : False, "is_signed" : False, "user_id" : 0}
-    data_dict[key] = val
+    for i in range(len(keys)) :
+        data_dict[keys[i]] = vals[i]
+        
     json.dump(data_dict, file, indent=4)
     file.close()
 
