@@ -31,11 +31,11 @@ def is_staff() :
     
     return data_dict["is_staff"]
 
-def set_data(keys, vals) :
+def set_data(pairs: dict) :
     file = open("./data.json", "w")
     data_dict = {"is_staff" : False, "is_signed" : False, "user_id" : 0}
-    for i in range(len(keys)) :
-        data_dict[keys[i]] = vals[i]
+    for key, val in pairs.items() :
+        data_dict[key] = val
         
     json.dump(data_dict, file, indent=4)
     file.close()
@@ -46,3 +46,7 @@ def get_us_id() :
     global data_dict
     
     return data_dict["user_id"]
+
+def return_404() :
+    code = codes_lib.Code(2)
+    return code.throw_404()

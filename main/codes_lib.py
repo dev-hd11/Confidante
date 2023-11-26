@@ -12,3 +12,6 @@ class Code :
         
         else :
             return None
+        
+    def throw_404(self) :
+        return HttpResponseRedirect("http://localhost:8000/page-not-found")

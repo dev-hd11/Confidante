@@ -1,5 +1,5 @@
 {
-    "is_staff": false,
+    "is_staff": true,
     "is_signed": false,
     "user_id": 0
 }
