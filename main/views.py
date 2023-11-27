@@ -5,6 +5,8 @@ from django.template import loader
 from .models import User, Entry
 from .auth_json import *
 from .forms import PassResetForm, AuthUserForm
+import os
+from . import settings_app
 
 one_redirect = 0
 
@@ -51,6 +53,18 @@ def staff(request) :
 
   if temp != None :
     return temp
+  
+  elif is_staff() :
+    user_all = User.objects.all().values()
+    entry_give = Entry.objects.all()
+    templ = loader.get_template("staff.html")
+    context = {
+      'users_all' : user_all,
+      'entry_give' : entry_give,
+      'myvar' : 1
+    }
+
+    return HttpResponse(templ.render(context, request))
   
   else :
     global one_redirect
@@ -118,6 +132,8 @@ def star_en(request, en_id) :
       en.is_starred = False if en.is_starred else True
       en.save()
 
+      return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={en.holder.id}")
+
     else :
       return return_404()
     
@@ -128,6 +144,7 @@ def star_en(request, en_id) :
 
     return HttpResponseRedirect(f"http://localhost:8000/get_en/{en.id}")
   else :
+
     return HttpResponseRedirect("http://localhost:8000/staff")
   
 def delete(request, en_id) :
@@ -148,33 +165,70 @@ def delete(request, en_id) :
       return HttpResponseRedirect("http://localhost:8000/staff")
   
     else :
-      return Http404
+      return return_404()
     
   else :
     return HttpResponseRedirect("http://localhost:8000/staff")
   
 def pass_chgn(request, us_id) :
-  form_p = None
-  templ = loader.get_template("pass_change.html")
-  if request.method == "POST" :
-    form_p = PassResetForm(request.POST)
-    if form_p.is_valid() :
-      d_set = form_p.cleaned_data["passwd"]
-      us = get_object_or_404(User, id = us_id)
-      us.passwd = d_set
-      us.save()
+  temp = is_pre_init()
 
-      return HttpResponseRedirect(f"http://localhost:8000/inside/user/{us_id}")
+  if temp != None :
+    return temp
+  
+  if is_signed() :
+    if get_us_id() == us_id :
+      form_p = None
+      templ = loader.get_template("pass_change.html")
+      if request.method == "POST" :
+        form_p = PassResetForm(request.POST)
+        if form_p.is_valid() :
+          d_set = form_p.cleaned_data["passwd"]
+          us = get_object_or_404(User, id = us_id)
+          us.passwd = d_set
+          us.save()
+
+          return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={us_id}")
+        
+        else :
+          form_p = PassResetForm()
+
+      
+      context = {
+        'us_id' : User.objects.get(id=us_id),
+        'form_p' : form_p
+      }
+      return HttpResponse(templ.render(context, request))
     
     else :
-      form_p = PassResetForm()
+      return_404()
+    
+  elif is_staff() :
+    form_p = None
+    templ = loader.get_template("pass_change.html")
+    if request.method == "POST" :
+      form_p = PassResetForm(request.POST)
+      if form_p.is_valid() :
+        d_set = form_p.cleaned_data["passwd"]
+        us = get_object_or_404(User, id = us_id)
+        us.passwd = d_set
+        us.save()
 
+        return HttpResponseRedirect(f"http://localhost:8000/staff")
+        
+      else :
+        form_p = PassResetForm()
+
+      
+    context = {
+      'us_id' : us_id,
+      'form_p' : form_p
+    }
+    return HttpResponse(templ.render(context, request))
   
-  context = {
-    'us_id' : us_id,
-    'form_p' : form_p
-  }
-  return HttpResponse(templ.render(context, request))
+  else :
+    return return_404()
+    
 
 def getUP(request, auth_code) :
   temp = is_pre_init()
@@ -201,7 +255,7 @@ def getUP(request, auth_code) :
 
               return HttpResponse(templ.render(context, request))
           
-          return HttpResponseRedirect(f"http://localhost:8000/inside/user/{get_us_id()}")
+          return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={get_us_id()}")
       else :
         form_auth = AuthUserForm()
           
@@ -219,7 +273,9 @@ def getUP(request, auth_code) :
           member = User(usname = form_auth.cleaned_data["usname"], passwd=form_auth.cleaned_data["passwd"])    
           member.save()
 
-          return HttpResponseRedirect(f"http://localhost:8000/inside/user/{member.id}")
+          set_data({"user_id" : member.id, "is_signed" : True})
+
+          return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={member.id}")
         
       else :
         form_auth = AuthUserForm()
@@ -231,4 +287,27 @@ def getUP(request, auth_code) :
       return HttpResponse(templ.render(context, request))
     
   else :
-    return HttpResponseRedirect(f"http://localhost:8000/inside/user/{get_us_id()}")
+    return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={get_us_id()}")
+  
+def view_profile(request) :
+  us_id = request.GET.get('user')
+
+  user = get_object_or_404(User, id = us_id)
+
+  entries = Entry.objects.filter(holder=user)
+
+  counter = entries.count()
+  templ = loader.get_template("user_profile.html")
+
+  context = {
+    "auth" : 2,
+    "us" : user,
+    "entry_val" : counter,
+    "entries" : entries
+  }
+
+  return HttpResponse(templ.render(context, request))
+
+def log_out(request) :
+  os.system(f"py {settings_app.PATH_TO_CLEANER}")
+  return HttpResponseRedirect("http://localhost:8000/")

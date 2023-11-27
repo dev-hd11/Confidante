@@ -20,7 +20,7 @@
     {% if myvar == 1 %}
         <body class = "back-img" onload = "getTime(0)">
             {% include 'navigate.html' %}
-            <div class = "container-block" style="width: 1500px; height: 600px; overflow: auto;">
+            <div class = "container-block" style="width: 1500px; height: 600px; overflow: auto; margin: 20px;">
                 <div class = "w3-dropdown-hover">
                     <button class = "w3-display-top-middle btn btn-primary">Delete</button>
                     <div class = "w3-dropdown-content w3-bar-block w3-border" style = "padding: 5px;">
@@ -101,7 +101,7 @@
             
                 <p class = "" id = "msg"></p>
                 <div class="form-floating mb-3 mt-3">
-                    <input type="text" class="form-control" id="passwd" placeholder="Password" name="passwd">
+                    <input type="password" class="form-control" id="passwd" placeholder="Password" name="passwd">
                     <label for="passwd">Password</label>
                 </div>
                 <button type = "button" class = "btn btn-outline-primary" onclick="checkForm()">Enter</button>

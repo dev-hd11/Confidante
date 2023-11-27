@@ -17,13 +17,13 @@
     <body class = "back-img-frm">
         {% include 'navigate.html' %}
         <div class = "container-block text-bg-dark">
-            <h1> Password Reset for User ID: {{us_id}} </h1><hr>
+            <h1> Password Reset for  {{us_id}} </h1><hr>
             <h4> Please enter new password: </h4>
-            <form action = "{% url 'pass_chgn' us_id=us_id%}" method = "post">
+            <form action = "{% url 'pass_chgn' us_id=us_id.id%}" method = "post">
                 {% csrf_token %}
                 <div class="form-floating mb-3 mt-3">
                     <input type="password" class="form-control" id="passwd" placeholder="Password" name="passwd" required>
-                    <label for="passwd">Password</label>
+                    <label for="passwd"> Password </label>
                 </div>     
                 <input type = "submit" class = "btn btn-primary">
             </form>
