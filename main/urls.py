@@ -12,5 +12,6 @@ urlpatterns = [
     path('inside/user/<int:us_id>/password-reset', views.pass_chgn, name = "pass_chgn"),
     path('inside/user/profile/<str:auth_code>', views.getUP, name = "getUP"),
     path('inside/user/profile/view/', views.view_profile, name="profile"),
-    path('inside/log_out', views.log_out, name="log_out")
+    path('inside/log_out', views.log_out, name="log_out"),
+    path('inside/create/entry', views.entry_maker, name="entry")
 ]

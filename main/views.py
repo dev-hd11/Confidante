@@ -1,12 +1,13 @@
 # Create your views here.
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.template import loader
 from .models import User, Entry
 from .auth_json import *
-from .forms import PassResetForm, AuthUserForm
+from .forms import PassResetForm, AuthUserForm, EntryForm
 import os
 from . import settings_app
+
 
 one_redirect = 0
 
@@ -162,7 +163,7 @@ def delete(request, en_id) :
     en = get_object_or_404(Entry, id = en_id)
     if get_us_id() == en.holder.id :
       en.delete()
-      return HttpResponseRedirect("http://localhost:8000/staff")
+      return HttpResponseRedirect(f"http://localhost:8000/inside/user/profile/view/?user={get_us_id()}")
   
     else :
       return return_404()
@@ -311,3 +312,31 @@ def view_profile(request) :
 def log_out(request) :
   os.system(f"py {settings_app.PATH_TO_CLEANER}")
   return HttpResponseRedirect("http://localhost:8000/")
+
+def entry_maker(request) :
+  print("got here!")
+  form = None
+  temp = is_pre_init()
+
+  if temp != None :
+    return temp
+  
+  elif is_signed() :
+    us_id = get_us_id()
+
+    if request.method == "POST" :
+      form = EntryForm(request.POST)
+      if form.is_valid() :
+        entry = Entry(title=form.cleaned_data["tit"], content=form.cleaned_data["txt"], is_starred=form.cleaned_data["starred"], holder = User.objects.get(id=us_id))
+        entry.save()
+
+        return HttpResponseRedirect(f'http://localhost:8000/inside/user/profile/view/?user={us_id}')
+
+    else :
+      form = EntryForm()
+
+    context = {
+      'last_id' : Entry.objects.last().id + 1
+    }
+
+    return render(request, "create_entry.html", context)

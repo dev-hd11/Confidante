@@ -25,15 +25,15 @@
     <body onload = "getTime(0)" class = "back-img-en">
         {% include 'navigate.html' %}
         {% if type == "user_pg" %}
-            <div class="container-fluid text-bg-primary scrollable container-block">
+            <div class="container-fluid text-bg-primary container-block" style="overflow: auto; height: 500px;">
                 <h1> User: {{us.usname}} </h1><hr>
                 <br><br><br><br>
                 <h2><strong>User ID:</strong> {{us.id}}</h2>
                 <h2><strong>Password:</strong> {{us.passwd}}</h2>
             </div>
         {% else %}
-            <div class="container-fluid text-bg-primary scrollable container-block">
-                <h1> Entry: {{en.id}} </h1><hr>
+            <div class="container-fluid text-bg-primary container-block" style="overflow: auto; height: 500px;">
+                <h1> Entry ID: {{en.id}} </h1><hr>
                 <p>On {{en.date}}</p>
                 {% if en.is_starred %}
                     <p class = "badge text-bg-warning">Starred</p>

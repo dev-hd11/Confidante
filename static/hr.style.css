@@ -1,0 +1,5 @@
+.custom-hr {
+    border-top: 2px solid black; /* Blue border */
+    margin: 20px 0; /* Vertical margin */
+    width: 100%;
+}
