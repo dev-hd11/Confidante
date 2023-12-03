@@ -49,8 +49,8 @@ Project is developed!
    ```
 
    Replace `key` with your key.
-
-3. Go to [http://localhost:8000](http://localhost:8000).
+3. Run Runner 1.0
+4. Go to [http://localhost:8000](http://localhost:8000).
 
 **Note: Based on i1 CARBON Release.**
 ## Copyright :
