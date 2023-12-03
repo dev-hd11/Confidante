@@ -34,7 +34,7 @@
 - Styled with Bootstrap 5
 
 ## Alert :
-Project is currently under development. It will get ready soon.
+Project is developed!
 
 ## Dependencies :
 1. Python 3.11 or 3.12
