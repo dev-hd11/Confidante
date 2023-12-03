@@ -2,7 +2,7 @@
 <h1> Confidante </h1>
 </div>
 
-[![GitHub version](https://badge.fury.io/gh/dev-hd11%2FConfidante.svg)](https://badge.fury.io/gh/dev-hd11%2FConfidante)
+[![GitHub version](https://img.shields.io/badge/version-i1%20CARBON-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
 ![GitHub License](https://img.shields.io/github/license/dev-hd11/Confidante)
 ![GitHub top language](https://img.shields.io/github/languages/top/dev-hd11/Confidante)
