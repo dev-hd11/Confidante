@@ -104,16 +104,16 @@ Version Code: 0.5.1
 Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante Polaris i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
 
 Chnagelog :
-[ADD] Powerded with CAuth Hercules II HYBRID: Now it is protected with our self built authentication system.
-[UPD] Staff Portal 4: Now we provide more protection and control over our users.
-[UPD] JAL R10+: JAL libraries upgraded including addition of Codes Lib.
-[UPD] UI Upgrades: We have upgraded our UI/UX.
-[ADD] Interface for logging in/signing up: Now you can login and sign up.
-[ADD] User Dashboard: We have attached a user dashboard for monitoring your account.
-[ADD] Password change: Now you can change your password.
-[ADD] Entries Form: Now you can create entries.
-[ADD] Runner 1.0: We have made an application which will run Confidante for you.
-[FIX] Fixing of various bugs related to Staff Portal and URL.
+[ADD] Powerded with CAuth Hercules II HYBRID: Now it is protected with our self built authentication system.<br>
+[UPD] Staff Portal 4: Now we provide more protection and control over our users.<br>
+[UPD] JAL R10+: JAL libraries upgraded including addition of Codes Lib.<br>
+[UPD] UI Upgrades: We have upgraded our UI/UX.<br>
+[ADD] Interface for logging in/signing up: Now you can login and sign up.<br>
+[ADD] User Dashboard: We have attached a user dashboard for monitoring your account.<br>
+[ADD] Password change: Now you can change your password.<br>
+[ADD] Entries Form: Now you can create entries.<br>
+[ADD] Runner 1.0: We have made an application which will run Confidante for you.<br>
+[FIX] Fixing of various bugs related to Staff Portal and URL.<br>
 
 **Patch level: 2023.20.6.26**
 Version Code: 1.0.0
