@@ -41,45 +41,18 @@ Project is currently under development. It will get ready soon.
 2. Django
 
 ## Installation :
-1. Create a virtual environment.<br>(For Windows)
-```shell
-python -m venv myenv
-cd myenv
-./Scripts/activate.bat
-``` 
+1. Install Runner 1.0
+2. Create a `.env` file in the Confidante/confidante folder and add this:
+   ```python
+   SECRET_KEY='key'
+   DEBUG=False
+   ```
 
-2. Install requirements.<br>
-```shell
-python -m pip install -r requirements.txt
+   Replace `key` with your key.
 
-```
+3. Go to [http://localhost:8000](http://localhost:8000).
 
-3. Download the latest release.
-4. Collect the static files if you have modified them.
-```shell
-py manage.py collectstatic
-```
-5. Make migrations.
-```shell
-py manage.py makemigrations
-py manage.py migrate
-```
-6. Create an admin account.
-```shell
-py manage.py createsuperuser
-```
-7. Run the sever.
-```shell
-py manage.py runserver
-```
-8. Go to [localhost](127.0.0.1:8000)
-9. Clean up the files while closing.
-```shell
-py cleanup.py
-```
-
-**Note: This steps are based on the RC1 version. You need to edit the secret key variable in the settings.py file.**
-
+**Note: Based on i1 CARBON Release.**
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
 
@@ -108,7 +81,7 @@ Version Code: 0.2.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.1.1-p...0.2.0
 
-### Release Ploaris i1 RC1 :
+### Release Polaris i1 RC1 :
 This release is a part of the Pre-Views. This series let's you explore the project which is in the last phase of development. Full release coming soon.
 
 [FIX] Bug fixes in Confidante UPS.<br>
@@ -126,6 +99,26 @@ This release is a part of the Pre-Views. This series let's you explore the proje
 Version Code: 0.5.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/0.2.0...v0.5.1
+
+### Release Polaris i1 CARBON :
+Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante Polaris i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
+
+Chnagelog :
+[ADD] Powerded with CAuth Hercules II HYBRID: Now it is protected with our self built authentication system.
+[UPD] Staff Portal 4: Now we provide more protection and control over our users.
+[UPD] JAL R10+: JAL libraries upgraded including addition of Codes Lib.
+[UPD] UI Upgrades: We have upgraded our UI/UX.
+[ADD] Interface for logging in/signing up: Now you can login and sign up.
+[ADD] User Dashboard: We have attached a user dashboard for monitoring your account.
+[ADD] Password change: Now you can change your password.
+[ADD] Entries Form: Now you can create entries.
+[ADD] Runner 1.0: We have made an application which will run Confidante for you.
+[FIX] Fixing of various bugs related to Staff Portal and URL.
+
+**Patch level: 2023.20.6.26**
+Version Code: 1.0.0
+
+**Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.5.1...i1-CARBON
 
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
