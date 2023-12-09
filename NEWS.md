@@ -12,3 +12,7 @@ Now some URLs are reseved for authenticated users only. The new files **data.jso
 ## Latest stable release coming soon!
 You will be pleased to know that we are officially announcing the latest release of Confidante -  **Confidante Polaris i1 CARBON**. It is loaded with tons of new features and patches. <br>
 For more information visit [our Official website](https://techworld856.godaddysites.com/f/confidante---release-coming-soon)
+
+
+## NOTICE
+This app is tested on Google Chrome only, so it is recommended to use Google Chrome for this app. Also some of the components of this app are not responsive (we are working to update the UI as soon as possible) so it is recommended to use it in maximized mode for better experience.
