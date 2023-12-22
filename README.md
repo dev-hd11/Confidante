@@ -120,6 +120,12 @@ Version Code: 1.0.0
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.5.1...i1-CARBON
 
+### Release Polaris i1 CARBON (Patched) :
+A major bug in the Entry creation page has been patched. Please upgrade to this edition ASAP.
+
+**Patch level: 2023.23.6.29**
+Version Code: 1.0.1
+
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
 
