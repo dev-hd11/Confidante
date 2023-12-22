@@ -314,7 +314,6 @@ def log_out(request) :
   return HttpResponseRedirect("http://localhost:8000/")
 
 def entry_maker(request) :
-  print("got here!")
   form = None
   temp = is_pre_init()
 
@@ -335,8 +334,10 @@ def entry_maker(request) :
     else :
       form = EntryForm()
 
+    last_id = Entry.objects.last().id + 1 if Entry.objects.exists() else "First"
+
     context = {
-      'last_id' : Entry.objects.last().id + 1
+      'last_id' : last_id
     }
 
     return render(request, "create_entry.html", context)
