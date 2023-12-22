@@ -96,6 +96,7 @@ This release is a part of the Pre-Views. This series let's you explore the proje
 
 **Patch level : 2023.9.3.12**
 
+
 Version Code: 0.5.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/0.2.0...v0.5.1
