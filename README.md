@@ -15,7 +15,8 @@
 
 ## Alert
 The latest releases of this app will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
-This repository might be non-functional as we are starting the creation of a new version of Confidante here.
+This repository might be non-functional as we are starting the creation of a new version of Confidante here.<br>
+We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
 
 ## Table of Content :
 1. [Features](#features-)
@@ -30,8 +31,10 @@ This repository might be non-functional as we are starting the creation of a new
 ## Features :
 - Secure
 - Encrypted
-- For different users
-- Capture the moments of your life
+- Multiple users supported
+- Entry creation system
+- Account management system
+- User Friendly UI
 - Privacy
 
 ## Dependencies :
