@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidante - Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <script>
+
+    </script>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div class="main">
+        <h1>Confidante</h1>
+        <p> Welcome to the best FOSS diary making web application</p>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

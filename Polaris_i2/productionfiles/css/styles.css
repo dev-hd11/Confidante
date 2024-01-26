@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.main {
+    padding: 5%;
+    background-image: url(./images/bg_home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    height: 60vh;
+    margin: 0;
+}
+
+.main h1 {
+    font-size: 1200%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    margin: 1% auto;
+    text-align: center;
+}

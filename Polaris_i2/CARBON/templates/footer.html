@@ -1,0 +1,22 @@
+<style>
+    div {
+        width: 100%;
+        padding: 0.25%;
+        margin: 0;
+        text-align: center;
+        color: red;
+        background-color: #12f;
+    }
+
+    div p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+</style>
+<div>
+    <p>&copy; Confidante 2023 - <span id="cur_year"></span>, Himank Deka. All Rights Reserved.</p>
+</div>
+<script>
+    var cur_year = new Date();
+
+    document.getElementById("cur_year").innerHTML = cur_year.getFullYear();
+</script>

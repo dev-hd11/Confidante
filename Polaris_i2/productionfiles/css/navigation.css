@@ -1,0 +1,54 @@
+#content {
+    margin: 0;
+    list-style-type: none;
+    background-color: black;
+    display: block;
+    padding: 2%;
+    margin-right: 50%;
+    width: 96%;
+}
+
+#content li {
+    display: inline;
+    text-align: center;
+    padding: 3%;
+}
+
+#content li a {
+    margin: 0 4%;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 100%;
+}
+
+#content li a:hover {
+    border-bottom: 0.5vh dotted white;
+}
+
+#content li a:active {
+    color: #111;
+}
+
+#content .label {
+    color: #fff;
+    float: left;
+    font-size: 100%;
+    font-family: cursive;
+    cursor: pointer;
+    transition: all 0.75s;
+}
+
+#content .label .badge{
+    padding: 0.5vh;
+    border-radius: 3vh;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+}
+
+#content .label:hover {
+    text-shadow: 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green;
+}

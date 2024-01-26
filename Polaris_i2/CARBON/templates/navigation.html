@@ -1,0 +1,27 @@
+<ul id="content">
+    <li><a href="#">About Us</a></li>
+    <li><a href="https://www.github.com/dev-hd11/Confidante">GitHub</a></li>
+    <li><a href="https://techworld856.godaddysites.com/">TechWorld</a></li>
+    <li><span id="lb" class="label">Polaris i2 <span id="bdg" class="badge">CARBON</span></span></li>
+    <script>
+        var lb = document.getElementById("lb");
+
+        lb.addEventListener("click", function() {
+            window.location.href = "http://localhost:8000/";
+        });
+
+        lb.addEventListener("mouseover", function() {
+            var bdg = document.getElementById("bdg");
+            bdg.style.textShadow = 'none';
+            setTimeout(function() {
+                            bdg.style.boxShadow = '0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green, 0 0 5px green';
+            }, 750);
+        });
+
+        lb.addEventListener("mouseout", function() {
+            setTimeout(function() {
+                            bdg.style.boxShadow = 'none';
+            }, 750);
+        });
+    </script>
+</ul>
