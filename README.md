@@ -1,6 +1,4 @@
-<div align = "center">
-<h1> Confidante </h1>
-</div>
+![Logo](confidante-high-resolution-logo.png)
 
 ![GitHub version](https://img.shields.io/badge/version-i1%20CARBON-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
