@@ -1,4 +1,4 @@
-![Logo](confidante-high-resolution-logo.png)
+![Logo](docs/confidante-high-resolution-logo.png)
 
 ![GitHub version](https://img.shields.io/badge/version-i1%20CARBON-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
@@ -18,15 +18,16 @@ The latest releases of this app will be available on [TechWorld](https://techwor
 This repository might be non-functional as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
 
+
+
 ## Table of Content :
 1. [Features](#features-)
-2. [Alert](#alert-)
-3. [Dependencies](#dependencies-)
-4. [Installation](#installation-)
-5. [Copyrights](#copyrights-)
-6. [Release Notes](#release-notes-)
-7. [Contributing](#contributing-)
-8. [Support](#support-)
+2. [Dependencies](#dependencies-)
+3. [Installation](#installation-)
+4. [Copyrights](#copyrights-)
+5. [Release Notes](#release-notes-)
+6. [Contributing](#contributing-)
+7. [Support](#support-)
 
 ## Features :
 - Secure
