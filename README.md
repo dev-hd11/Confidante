@@ -14,7 +14,8 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
-The latest releases of this app will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.
+The latest releases of this app will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
+This repository might be non-functional as we are starting the creation of a new version of Confidante here.
 
 ## Table of Content :
 1. [Features](#features-)
@@ -32,28 +33,13 @@ The latest releases of this app will be available on [TechWorld](https://techwor
 - For different users
 - Capture the moments of your life
 - Privacy
-- Styled with Bootstrap 5
-
-## Alert :
-Project is developed!
 
 ## Dependencies :
 1. Python 3.11 or 3.12
 2. Django
 
 ## Installation :
-1. Install Runner 1.0
-2. Create a `.env` file in the Confidante/confidante folder and add this:
-   ```python
-   SECRET_KEY='key'
-   DEBUG=False
-   ```
 
-   Replace `key` with your key.
-3. Run Runner 1.0
-4. Go to [http://localhost:8000](http://localhost:8000).
-
-**Note: Based on i1 CARBON Release.**
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
 
