@@ -18,6 +18,7 @@ The latest releases of this app will be available on [TechWorld](https://techwor
 This repository might be non-functional as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
 
+![Pic](docs/confidante-pro-high-resolution-logo.png)
 
 
 ## Table of Content :
