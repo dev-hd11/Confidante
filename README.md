@@ -15,6 +15,9 @@
 
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
+## Alert
+The latest releases of this app will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.
+
 ## Table of Content :
 1. [Features](#features-)
 2. [Alert](#alert-)
