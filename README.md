@@ -1,6 +1,6 @@
 ![Logo](docs/confidante-high-resolution-logo.png)
 
-![GitHub version](https://img.shields.io/badge/CARBON%20version-Polaris%20i1-blue)
+![GitHub version](https://img.shields.io/badge/CARBON%20version-Polaris%20i2-blue)
 ![Stable version](https://img.shields.io/badge/Stable%20GitHub%20version-Polaris%20i1%20CARBON-blue)
 ![Best version](https://img.shields.io/badge/PRO%20version-Zeus%20I-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
