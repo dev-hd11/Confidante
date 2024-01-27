@@ -122,8 +122,16 @@ Version Code: 1.0.0
 A major bug in the Entry creation page has been patched. Please upgrade to this edition ASAP.
 
 **Patch level: 2023.23.6.29**<br>
-Version Code: 1.0.1
+Version Code: 1.0.1<br>
+**Full Changelog**: https://github.com/dev-hd11/Confidante/compare/i1-CARBON...i1-CARBON-Patched
 
+### Release Polaris i2 CARBON Pre-view 1:
+This is a pre-view of the latest version of Confidante. Please note that it will take some time till we release the fully stable Polaris i2 CARBON version. This is just a pre-view release so it may not be fully functional.
+
+**Patch level: 2024.25.6.31**<br>
+Version Code: 1.3.1<br>
+
+**Full Changelog**: https://github.com/dev-hd11/Confidante/compare/i1-CARBON-Patched...i2-CARBON-pre1
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
 
