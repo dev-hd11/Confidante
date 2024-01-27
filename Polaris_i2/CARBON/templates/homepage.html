@@ -1,4 +1,5 @@
 {% load static %}
+<!-- (C) Himank Deka, 2023 - present -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confidante - Home</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Black%20Ops%20One">
     <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var fs = document.getElementById("fs");
+                var main = document.getElementById("main");
 
+                fs.style.display = 'none';
+                main.style.display = 'flex';
+            }, 2000);
+            var loader = document.getElementById("loader");
+            var loader2 = document.getElementById("loader2");
+            var btn = document.getElementById("btn");
+
+            btn.addEventListener("click", function() {
+                btn.style.cursor = 'wait';
+                btn.style.opacity = '0.5';
+                loader.className = 'fa fa-cog spinIt';
+                loader2.className = 'fa fa-cog spinIt';
+
+                setTimeout(function() {
+                    window.location.href = "http://localhost:8000/get-started";
+                }, 3000);
+            });
+        });
     </script>
 </head>
 <body>
     {% include 'navigation.html' %}
-    <div class="main">
+    <div class="first_screen" id="fs">
+        <div></div>
+    </div>
+    <div class="main" id="main">
         <h1>Confidante</h1>
+        <p class="version" style="font-family: Pacifico; font-size: 500%; margin-top: 0; color: aqua;">Polaris</p>
         <p> Welcome to the best FOSS diary making web application</p>
+        <a style="font-family: Black Ops One;" id="btn"><span id="loader2"></span> Let's Go <span id="loader"></span></a>
     </div>
     {% include 'footer.html' %}
 </body>
