@@ -20,6 +20,9 @@ We have launched a new variant of Confidante, The Confidante PRO. This version i
 
 ![Pic](docs/confidante-pro-high-resolution-logo.png)
 
+# Screenshots
+![Sc1](docs/Screenshot1.png)
+
 
 ## Table of Content :
 1. [Features](#features-)
