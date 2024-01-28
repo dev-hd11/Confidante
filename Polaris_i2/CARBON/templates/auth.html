@@ -30,12 +30,12 @@
                     <input type="password" name="pswd" required><br>
                     <button class="btn">Submit</button>
                 </form>
+                {% if page == 'Login' %}
+                    <p>Don't have an account?<a href="{% url 'auth' %}?page=Signup">Sign Up</a></p>
+                {% else %}
+                    <p>Already have an account?<a href="{% url 'auth' %}?page=Login">Login</a></p>
+                {% endif %}
             </div>
-            {% if page == 'Login' %}
-                <p>Don't have an account?<a href="{% url 'auth' %}?page=Signup">Sign Up</a></p>
-            {% else %}
-                <p>Already have an account?<a href="{% url 'auth' %}?page=Login">Login</a></p>
-            {% endif %}
         </div>
         <div id = "left">
         </div>
