@@ -136,4 +136,4 @@ Version Code: 1.3.1<br>
 See [CONTRIBUTING](./CONTRIBUTING.md).
 
 ## Support
-Having problems? Search for it in [NEWS](./NEWS.md) or in *Issues* or raise your own *issue*.
+Having problems? Search for it in *Issues* or raise your own *issue*.
