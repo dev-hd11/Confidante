@@ -12,6 +12,10 @@ def home(request) :
 def success(request) :
     return render(request, "sucess.html")
 
+def signout(request) :
+    logout(request)
+    return redirect('home')
+
 def auth(request) :    
     page = request.GET.get("page")
 

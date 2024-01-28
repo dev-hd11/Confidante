@@ -18,12 +18,12 @@
 <body>
     {% include 'navigation.html' %}
     <div class="body">
-        <span class="error" id="err"></span>
         <div id = "right" data-status="{{ error }}">
             <h1 style="font-family: Quando;">{{ page }}</h1>
             <div class="auth_form">
                 <form method="post">
                     {% csrf_token %}
+                    <span class="error" id="err"></span>
                     <p style="color: #fff; font-family: Roboto Slab; font-size: 110%;">Username</p>
                     <input type="text" name="usname" required><br>
                     <p style="color: #fff; font-family: Roboto Slab; font-size: 110%;">Password</p>
