@@ -3,8 +3,9 @@
 All rights reserved.
 
 # Information :
-- This project's webpages are styled with a mixture of Bootstrap 5, W3.CSS and some of our own **copyright** CSS files.
-- This project uses Bootstrap 5 JavaScript along with our own **copyright** JavaScript.
+- This project's webpages are styled with **copyright** CSS which we have coded.
+- The commercial use of the logo on our webpages and the favicon  are **strictly prohibited**. (C) 2023 - present, Himank Deka. All rights reserved.
+- This project uses **copyright** JavaScript which we have coded.
 
 Confidante Copyright (C) 2023  Himank Deka
 
