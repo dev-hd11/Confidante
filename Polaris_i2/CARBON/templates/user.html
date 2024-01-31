@@ -1,0 +1,31 @@
+{% load static %}
+<!-- (C) Himank Deka, 2023 - present -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black%20Ops%20One|Cabin|Prompt|Arvo|Permanent%20Marker|Ramabhadra">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/user.css' %}">
+    <script src="{% static 'js/users.js' %}"></script>
+    <title>Welcome {{ user.username }}</title>
+</head>
+<body>
+    {% include 'navigation.html' %}    
+    <div id="main-content">
+        <h1>Welcome Back, <span>{{ user.username }}</span></h1>
+        <div id="navbar">
+            <a id="left" onclick="redirect_to_delete()">Delete</a>
+            <a href="{% url 'passwd' %}">Change Password</a>
+            <a id="right" href="{% url 'signout' %}">Log Out</a>
+        </div>
+        <div id="diary">
+            <h2>Your Diary</h2>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
