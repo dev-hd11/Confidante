@@ -16,7 +16,7 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
-The license of this project is changed from GNU AGPL v3.0 to MS-PL.<br>
+This project is now licensed under MS-PL.<br><br><br>
 The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
 This repository might be non-functional as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
