@@ -4,6 +4,7 @@ from django.http import HttpRequest
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from .models import Entry
 
 LOGIN_URL = '/auth/?page=Login'
 
@@ -14,6 +15,23 @@ def home(request: HttpRequest) :
     
     return render(request, "homepage.html")
 
+@login_required(login_url=LOGIN_URL)
+def create_entry(request: HttpRequest) :
+    if request.method == "POST" :
+        title = request.POST["title"].strip()
+        content = request.POST["content"].strip()
+
+        if title == "" or content == "" :
+            return render(request, "entry.html", {"error" : 'yes'})
+        
+        entry = Entry(title=title, content=content, author=request.user)
+        entry.save()
+
+        return redirect('home')
+
+    return render(request, "entry.html")
+
+@login_required(login_url=LOGIN_URL)
 def passwd(request: HttpRequest) :
     if request.method == "POST" :
         new_passwd = request.POST["passwd"].strip()
@@ -32,7 +50,8 @@ def passwd(request: HttpRequest) :
 @login_required(login_url=LOGIN_URL)
 def user(request: HttpRequest) :
     current_user = request.user
-    context = {"user" : current_user}
+    entries = Entry.objects.filter(author=current_user)
+    context = {"user" : current_user, "entries" : entries}
     return render(request, "user.html", context)
 
 @login_required(login_url=LOGIN_URL)

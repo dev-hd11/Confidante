@@ -73,7 +73,11 @@ body {
     height: 40vh;
     margin: 5% 0;
     border-top: 0.25vh solid red;
+    display: flex;
+    flex-direction: column;
     padding: 0.5%;
+    align-items: flex-start;
+    overflow: auto;
 }
 
 #diary h2 {
@@ -81,4 +85,25 @@ body {
     color: red;
     font-family: Ramabhadra;
     font-size: 200%;
+}
+
+#diary a {
+    padding: 1%;
+    border-radius: 20vh;
+    border: none;
+    color: #fff;
+    background-color: red;
+    font-size: 150%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.75s;
+    width: 4vh;
+    font-family: Arvo;
+}
+
+#diary a:hover {
+    border: 0.25 vh solid red;
+    background-color: #111;
+    color: red;
+    box-shadow: 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
 }

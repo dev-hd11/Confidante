@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    overflow: hidden;
+}
+
+#content-body {
+    height: 80vh;
+}
+
+#container1 h1 {
+    margin: 1% auto;
+    color: red;
+    padding: 2%;
+    border: 0.5vh solid red;
+    border-radius: 10vh;
+    width: 20%;
+    font-size: 200%;
+    font-family: Arvo;
+}
+
+#container1 {
+    margin: 0 auto;
+    padding: 0.5%;
+    border-bottom: 0.2vh solid aqua;
+}
+
+#form-container {
+    padding: 1%;
+    border: 0.25vh solid #fff;
+    margin: 2% auto;
+    border-radius: 3vh;
+    width: 30%;
+}
+
+#form-container form p {
+    margin: 3% auto;
+    color: red;
+    font-size: 150%;
+    font-family: Black Ops One;
+    padding: 2%;
+    border: 0.25vh solid green;
+    border-radius: 2vh;
+    width: 30%;
+}
+
+#form-container form input[type='text'] {
+    border: 0.25vh solid red;
+    font-size: 100%;
+    width: 80%;
+    font-family: Prompt;
+    background-color: transparent;
+    padding: 1%;
+    border-radius: 2vh;
+    color: red;
+    transition: all 0.75s;
+}
+
+#form-container form input[type='text']:focus {
+    outline: none;
+    box-shadow: 0 0 2vh red,  0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
+}
+
+#form-container form textarea {
+    border: 0.25vh solid red;
+    font-size: 100%;
+    width: 80%;
+    height: 20%;
+    font-family: Prompt;
+    background-color: transparent;
+    padding: 1%;
+    border-radius: 2vh;
+    color: red;
+    transition: all 0.75s;
+}
+
+#form-container form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 2vh red,  0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
+}
+
+#form-container form button {
+    padding: 2%;
+    margin-top: 2%;
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+    font-size: 100%;
+    border: none;
+    border-radius: 5vh;
+    transition: all 0.75s;
+    font-family: Permanent Marker;
+}
+
+#form-container form button:hover {
+    color: red;
+    background-color: #111;
+    box-shadow: 0 0 2vh red,  0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
+}

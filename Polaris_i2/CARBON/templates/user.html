@@ -24,6 +24,10 @@
         </div>
         <div id="diary">
             <h2>Your Diary</h2>
+            <a href="{% url 'create_entry' %}">+</a>
+            {% for x in entries %}
+                <p style="color: #fff;">{{ x.title }}</p>
+            {% endfor %}
         </div>
     </div>
     {% include 'footer.html' %}

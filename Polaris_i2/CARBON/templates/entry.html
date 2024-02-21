@@ -1,0 +1,35 @@
+<!-- (C) 2023 - present, Himank Deka -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black%20Ops%20One|Cabin|Prompt|Arvo|Permanent%20Marker">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/entry.css' %}">
+    <script src="{% static 'js/entry.js' %}"></script>
+    <title>Create Entry</title>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div id="content-body">
+        <div id="container1">
+            <h1>Create Entry</h1>
+        </div>
+        <div id="form-container" data-err="{{ error }}">
+            <form method="post">
+                {% csrf_token %}
+                <p>Title</p><br>
+                <input type="text" name="title" required><br>
+                <p>Content</p><br>
+                <textarea name="content" required></textarea><br>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
