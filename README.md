@@ -98,10 +98,10 @@ Version Code: 0.5.1
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/0.2.0...v0.5.1
 
 ### Release Polaris™️ i1 CARBON :
-Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante Polaris i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
+Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante™️ Polaris™️ i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
 
 Chnagelog :
-[ADD] Powerded with CAuth Hercules II HYBRID: Now it is protected with our self built authentication system.<br>
+[ADD] Powerded with CAuth™️ Hercules II HYBRID: Now it is protected with our self built authentication system.<br>
 [UPD] Staff Portal 4: Now we provide more protection and control over our users.<br>
 [UPD] JAL R10+: JAL libraries upgraded including addition of Codes Lib.<br>
 [UPD] UI Upgrades: We have upgraded our UI/UX.<br>
