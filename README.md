@@ -16,6 +16,7 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
+This project is now licensed under MS-PL.<br><br><br>
 The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
 This repository might be non-functional as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
@@ -53,7 +54,7 @@ See [COPYRIGHTS](./COPYRIGHTS.md)
 
 ## Release Notes :
 
-### Release Polaris i1 Pre View :
+### Release Polaris™️ i1 Pre View :
 This release is a preview of the web UI. Not functional yet. This release has some UI components and non-commercial. Please wait till we release our stable version.
 
 **Patch Level: 2023.2.1.3**
@@ -62,7 +63,7 @@ Version Code: 0.1.2
 
 Full Changelog: https://github.com/dev-hd11/Confidante/commits/v0.1.1
 
-### Release Polaris i1 Pre View 2 :
+### Release Polaris™️ i1 Pre View 2 :
 This release contains database upgrades with a few UI improvement. This release is also a pre-view. Please wait for the full release.
 
 [ADD] Staff Portal (v1): A lightweight alternative to Django Admin. Contains features to view the database. [BETA] <br>
@@ -76,7 +77,7 @@ Version Code: 0.2.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.1.1-p...0.2.0
 
-### Release Polaris i1 RC1 :
+### Release Polaris™️ i1 RC1 :
 This release is a part of the Pre-Views. This series let's you explore the project which is in the last phase of development. Full release coming soon.
 
 [FIX] Bug fixes in Confidante UPS.<br>
@@ -96,11 +97,11 @@ Version Code: 0.5.1
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/0.2.0...v0.5.1
 
-### Release Polaris i1 CARBON :
-Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante Polaris i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
+### Release Polaris™️ i1 CARBON :
+Well now your long wait is over! Finally we are presenting you the OG release of our software...... **Confidante™️ Polaris™️ i1 CARBON**! It is the full release with all the functionalities and it is fully commercial edition. If you have downloaded any previous version please switch to this one.
 
 Chnagelog :
-[ADD] Powerded with CAuth Hercules II HYBRID: Now it is protected with our self built authentication system.<br>
+[ADD] Powerded with CAuth™️ Hercules II HYBRID: Now it is protected with our self built authentication system.<br>
 [UPD] Staff Portal 4: Now we provide more protection and control over our users.<br>
 [UPD] JAL R10+: JAL libraries upgraded including addition of Codes Lib.<br>
 [UPD] UI Upgrades: We have upgraded our UI/UX.<br>
@@ -116,14 +117,14 @@ Version Code: 1.0.0
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/v0.5.1...i1-CARBON
 
-### Release Polaris i1 CARBON (Patched) :
+### Release Polaris™️ i1 CARBON (Patched) :
 A major bug in the Entry creation page has been patched. Please upgrade to this edition ASAP.
 
 **Patch level: 2023.23.6.29**<br>
 Version Code: 1.0.1<br>
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/i1-CARBON...i1-CARBON-Patched
 
-### Release Polaris i2 CARBON Pre-view 1:
+### Release Polaris™️ i2 CARBON Pre-view 1:
 This is a pre-view of the latest version of Confidante. Please note that it will take some time till we release the fully stable Polaris i2 CARBON version. This is just a pre-view release so it may not be fully functional.
 
 **Patch level: 2024.25.6.31**<br>
