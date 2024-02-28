@@ -1,6 +1,6 @@
 # (C) Himank Deka, 2023
-from django.shortcuts import render, redirect
-from django.http import HttpRequest
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpRequest, Http404
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -106,3 +106,27 @@ def auth(request: HttpRequest) :
             
         else :
             return render(request, "auth.html", {"page" : page, "error" : 'no'})
+        
+
+@login_required(login_url=LOGIN_URL)
+def delete_entry(request: HttpRequest, id: int) :
+    entry = get_object_or_404(Entry, pk=id)
+
+    if entry.author.username != request.user.username :
+        raise Http404()
+    
+    else :
+        entry.delete()
+        return redirect('user')
+    
+@login_required(login_url=LOGIN_URL)
+def star_entry(request: HttpRequest, id: int) :
+    entry = get_object_or_404(Entry, pk=id)
+
+    if entry.author.username != request.user.username :
+        raise Http404()
+    
+    else :
+        entry.star = not entry.star
+        entry.save()
+        return redirect('user')

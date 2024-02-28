@@ -1,10 +1,11 @@
 /* 
-(C) 2023 - presemt, Himank.
+(C) 2023 - present, Himank Deka.
  */
-body {
+ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 99%;
     background-color: #111;
 }
 
@@ -14,7 +15,7 @@ body {
 
 #main-content h1 {
     color: #fff;
-    align-self: center;
+    text-align: center;
     font-family: Arvo;
     font-size: 200%;
     margin-top: 0.5%;
@@ -35,25 +36,24 @@ body {
 }
 
 #navbar {
-    display: inline;
-    align-self: center;
+    display: inline-block;
+    text-align: center;
 }
 
 #navbar a {
-    text-align: center;
     text-decoration: none;
     padding: 1%;
     background-color: red;
     transition: all 0.75s;
     color: #fff;
     border: none;
-    font-size: 100%;
+    font-size: 20px; 
     font-family: Permanent Marker;
 }
 
 #navbar a:hover {
     cursor: pointer;
-    border: 0.25 vh solid red;
+    border: 0.25vh solid red;
     background-color: #111;
     color: red;
     box-shadow: 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
@@ -73,23 +73,21 @@ body {
     height: 40vh;
     margin: 5% 0;
     border-top: 0.25vh solid red;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5%;
-    align-items: flex-start;
-    overflow: auto;
+    padding: 0.1%;
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 #diary h2 {
-    float: left;
     color: red;
     font-family: Ramabhadra;
     font-size: 200%;
+    margin-bottom: 0%;
 }
 
 #diary a {
     padding: 1%;
-    border-radius: 20vh;
+    border-radius: 100%;
     border: none;
     color: #fff;
     background-color: red;
@@ -97,13 +95,40 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.75s;
-    width: 4vh;
+    margin: 1%;
+    width: 2%; 
     font-family: Arvo;
+    display: inline-block;
 }
 
 #diary a:hover {
-    border: 0.25 vh solid red;
+    border: 0.25vh solid red;
     background-color: #111;
     color: red;
     box-shadow: 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red, 0 0 2vh red;
+}
+
+.entry-container {
+    color: red;
+    text-align: left;
+    font-size: 120%;
+    padding: 1%;
+    width: 30%;
+    margin: 1% auto;
+    border: 3px solid red; 
+    border-radius: 4vh;
+}
+
+.entry-container .fonter {
+    font-family: Black Ops One;
+    text-decoration: none;
+}
+
+.entry-container button {
+    cursor: pointer;
+    font-size: 100%;
+    float: right;
+    color: red;
+    background-color: transparent;
+    border: none;
 }

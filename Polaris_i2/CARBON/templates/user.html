@@ -26,7 +26,9 @@
             <h2>Your Diary</h2>
             <a href="{% url 'create_entry' %}">+</a>
             {% for x in entries %}
-                <p style="color: #fff;">{{ x.title }}</p>
+                <div class="entry-container">
+                    <span><lnk class="fonter">{{ x.title }}</lnk> <button onclick="window.location.href= `{% url 'delete_entry' id=x.id %}`"><span class='fa fa-trash' style="color: red;"></span></button><button onclick="window.location.href= `{% url 'star_entry' id=x.id %}`"> <span class='{% if x.star %} fa fa-star' {% else %} fa fa-star-o' {% endif %} style="color: red;"></span></button></span>
+                </div>
             {% endfor %}
         </div>
     </div>
