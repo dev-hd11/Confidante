@@ -27,7 +27,7 @@
             <a href="{% url 'create_entry' %}">+</a>
             {% for x in entries %}
                 <div class="entry-container">
-                    <span><lnk class="fonter">{{ x.title }}</lnk> <button onclick="window.location.href= `{% url 'delete_entry' id=x.id %}`"><span class='fa fa-trash' style="color: red;"></span></button><button onclick="window.location.href= `{% url 'star_entry' id=x.id %}`"> <span class='{% if x.star %} fa fa-star' {% else %} fa fa-star-o' {% endif %} style="color: red;"></span></button></span>
+                    <span><lnk class="fonter" onclick="window.location.href = `{% url 'view_entry' id=x.id %}`">{{ x.title }}</lnk> <button onclick="window.location.href= `{% url 'delete_entry' id=x.id %}`"><span class='fa fa-trash' style="color: red;"></span></button><button onclick="window.location.href= `{% url 'star_entry' id=x.id %}`"> <span class='{% if x.star %} fa fa-star' {% else %} fa fa-star-o' {% endif %} style="color: red;"></span></button></span>
                 </div>
             {% endfor %}
         </div>

@@ -1,0 +1,66 @@
+/* (C) 2024, Himank Deka */
+body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    width: 98%;
+    overflow: hidden;
+}
+
+#inter_div {
+    padding: 2%;
+    border-bottom: 0.1vh solid aqua;
+    border-top: 0.1vh solid aqua;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#main_div {
+    height: 80vh;
+}
+#inter_div h1 {
+    font-size: 150%;
+    width: 30%;
+    color: red;
+    margin: 0 auto;
+    padding: 1.5%;
+    background-color: transparent;
+    border: 0.5vh solid red;
+    border-radius: 5vh;
+    font-family: Arvo;
+}
+
+#info_group {
+    padding: 1%;
+    border-bottom: 0.1vh solid aqua;
+}
+
+#info_group p {
+    color: red;
+    font-family: Patua One;
+    font-size: 120%;
+}
+
+#info_group .starred {
+    padding: 0.4%;
+    background-color: darkgoldenrod;
+    margin: 1%;
+    font-size: 100%;
+    font-family: Alegreya Sans SC;
+    color: #fff;
+    border: none;
+    border-radius: 20vh;
+}
+  
+#diary_content {
+    padding: 1%;
+    color: #fff;
+    overflow-y: auto;
+    text-align: left;
+    line-height: 180%;
+    height: 40vh;
+    border-bottom: 0.1vh solid aqua;
+}
+
+#diary_content p {
+    font-family: Lexend Deca;
+    font-size: 110%;
+}

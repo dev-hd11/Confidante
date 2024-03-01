@@ -1,0 +1,33 @@
+<!-- (C) 2024, Himank Deka -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry No. {{ x.id }}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/view_entry.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black%20Ops%20One|Cabin|Prompt|Arvo|Permanent%20Marker|Ramabhadra|Lexend%20Deca|Patua%20One|Alegreya%20Sans%20SC">
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div id='main_div'>
+        <div id="inter_div">
+            <h1>{{ x.title }}</h1>
+        </div>
+        <div id="info_group">
+            <p>Date: {{ x.date }}</p>
+            {% if x.star %}
+                <badge class="starred"><span class="fa fa-star"></span> Starred</badge>
+            {% endif %}
+        </div>
+        <div id="diary_content">
+            <p>{{ x.content|linebreaks }}</p>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

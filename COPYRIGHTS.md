@@ -2,7 +2,7 @@
 ©️ 2023 (Whole Project), Himank Deka \([@dev-hd11](https://www.github.com/dev-hd11)\) <br>
 All rights reserved.
 
-Comfidante™️ is a trademark of himank deka
+Comfidante™️, Polaris™️ and Zeus™️ are trademarks of Himank deka
 
 # Information :
 - This project's webpages are styled with **copyright** CSS which we have coded.

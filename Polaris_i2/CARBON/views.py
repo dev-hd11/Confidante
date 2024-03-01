@@ -130,3 +130,13 @@ def star_entry(request: HttpRequest, id: int) :
         entry.star = not entry.star
         entry.save()
         return redirect('user')
+    
+@login_required(login_url=LOGIN_URL)
+def view_entry(request: HttpRequest, id: int) :
+    entry = get_object_or_404(Entry, pk=id)
+
+    if entry.author.username != request.user.username :
+        raise Http404()
+    
+    else :
+        return render(request, "view_entry.html", {'x' : entry})

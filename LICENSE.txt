@@ -1,4 +1,4 @@
-Microsoft Public License [Modified]
+Microsoft Public License
 
 Copyright (c) Himank Deka, 2024.
 All rights Reserved.

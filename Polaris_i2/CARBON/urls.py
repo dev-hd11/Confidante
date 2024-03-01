@@ -7,9 +7,10 @@ urlpatterns = [
     path('user/', views.user, name='user'),
     path('user/del/', views.delete, name='delete'),
     path('user/change-password/', views.passwd, name='passwd'),
-    path('diary/entry/', views.create_entry, name='create_entry'),
-    path('diary/entry/<int:id>/delete', views.delete_entry, name='delete_entry'),
-    path('diary/entry/<int:id>/star', views.star_entry, name='star_entry'),
+    path('diary/', views.create_entry, name='create_entry'),
+    path('diary/<int:id>/', views.view_entry, name='view_entry'),
+    path('diary/<int:id>/delete/', views.delete_entry, name='delete_entry'),
+    path('diary/<int:id>/star/', views.star_entry, name='star_entry'),
     path('auth/', views.auth, name='auth'), # type: ignore
     path('auth/signout/', views.signout, name='signout')
 ]

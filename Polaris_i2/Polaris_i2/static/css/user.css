@@ -72,10 +72,11 @@
 #diary {
     height: 40vh;
     margin: 5% 0;
-    border-top: 0.25vh solid red;
+    border-top: 0.25vh solid aqua;
     padding: 0.1%;
     overflow-x: hidden; 
     overflow-y: auto;
+    border-bottom: 0.25vh solid aqua;
 }
 
 #diary h2 {
@@ -121,6 +122,7 @@
 
 .entry-container .fonter {
     font-family: Black Ops One;
+    cursor: pointer;
     text-decoration: none;
 }
 

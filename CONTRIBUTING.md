@@ -1,6 +1,6 @@
 ## Contributions :
 Project is fully developed and we are now acceppting pull requests. Please send pull requests for inspection.
-Useful ones will be uploaded in version CARBON X.
+Useful ones will be uploaded in version i3 CARBON.
 
 ## Copyright :
 Current copyright holder of all source code is Himank Deka.
