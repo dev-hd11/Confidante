@@ -23,7 +23,12 @@
             <a id="right" href="{% url 'signout' %}">Log Out</a>
         </div>
         <div id="diary">
-            <h2>Your Diary</h2>
+            <h2>Your Diary <span style="border-radius: 20vh;
+                padding: 0.6%;
+                font-size: 80%;
+                font-family: Cabin;
+                background-color: red;
+                color: #fff;">{{ counter }}</span></h2>
             <a href="{% url 'create_entry' %}">+</a>
             {% for x in entries %}
                 <div class="entry-container">

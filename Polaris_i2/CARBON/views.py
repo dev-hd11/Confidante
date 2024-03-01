@@ -51,7 +51,7 @@ def passwd(request: HttpRequest) :
 def user(request: HttpRequest) :
     current_user = request.user
     entries = Entry.objects.filter(author=current_user)
-    context = {"user" : current_user, "entries" : entries}
+    context = {"user" : current_user, "entries" : entries, "counter" : entries.count()}
     return render(request, "user.html", context)
 
 @login_required(login_url=LOGIN_URL)
