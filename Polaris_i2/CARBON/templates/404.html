@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black%20Ops%20One|Cabin|Prompt|Arvo|Permanent%20Marker|Ramabhadra">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+        }
+        
+        #main_content_404 {
+            height: 80vh;
+        }
+        #inter_div {
+            padding: 2%;
+            border-bottom: 0.1vh solid aqua;
+            border-top: 0.1vh solid aqua;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #inter_div h1 {
+            font-size: 200%;
+            width: 30%;
+            color: red;
+            margin: 0 auto;
+            padding: 1.5%;
+            background-color: transparent;
+            border: 0.5vh solid red;
+            border-radius: 5vh;
+            font-family: Permanent Marker;
+        }
+
+        msg {
+            font-size: 150%; 
+            margin: 5% 0.5%;
+            color: red;
+            font-family: Black Ops One;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div id="main_content_404">
+        <div id="inter_div">
+            <h1>ERROR 404</h1>
+        </div>
+        <msg>
+            Invalid resource requested. Return to <a href="{% url 'home' %}">Home</a>.
+        </msg>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

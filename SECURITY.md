@@ -6,7 +6,7 @@ The following versions are currently eligible for security updates. If you are n
 
 | Version Name | Version Code | Supported          |
 |--------------| ------- | ------------------ |
-| Polaris™️ i1 CARBONs| 2.x  | :white_check_mark: |
+| Polaris™️ i2 CARBONs| 2.x  | :white_check_mark: |
 | PRO Zeus™️ I | N.A | :white_check_mark: |
 | Polaris™️ i1 CARBONs| 1.x  | :white_check_mark: |
 | Polaris™️ Pre View(s) | 0.x   | :x:                |
