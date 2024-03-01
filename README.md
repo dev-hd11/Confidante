@@ -46,6 +46,7 @@ We have launched a new variant of Confidante, The Confidante PRO. This version i
 ## Dependencies :
 1. Python 3.11 or 3.12
 2. Django
+3. WhiteNoise
 
 ## Installation :
 
