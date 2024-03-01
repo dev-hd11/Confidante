@@ -27,4 +27,4 @@ jobs:
         pip install -r Polaris_i2/requirements.txt
     - name: Run Tests
       run: |
-        python Polaris_i2/manage.py runserver
+        python Polaris_i2/manage.py test
