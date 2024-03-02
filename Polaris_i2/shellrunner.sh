@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "ShellRunner v1 for Confidante\nCopyright (C) 2024, Himank Deka."
+echo ShellRunner v1 for Confidante
+echo Copyright (C) 2024, Himank Deka.
 
 python3 -m pip install --upgrade pip
 
