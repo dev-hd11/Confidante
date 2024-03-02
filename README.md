@@ -16,7 +16,7 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
-This project is now licensed under MS-PL.<br><br><br>
+This project is now licensed under CEULA (See LICENSE).<br><br><br>
 The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
 This repository might not be stable as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
