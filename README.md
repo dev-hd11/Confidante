@@ -132,6 +132,22 @@ This is a pre-view of the latest version of Confidante. Please note that it will
 Version Code: 1.3.1<br>
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/i1-CARBON-Patched...i2-CARBON-pre1
+
+### Release Polaris™️ i2 CARBON :
+The second release of our software is here! This release includes a whole new UI/UX. The authentication systems are also optimised and the code is more organised. This version comes with the new ShellRunner™️ v1 script.<br>
+
+[ADD] ShellRunner™️ v1: An automation script for running the app without writing any commands.<br>
+[UPD] New UI: A more modern and user friendly UI has been provided.<br>
+[UPD] Django's in-built Authentication: We are now integrating Django's Authentication package in our app for better performance.<br>
+[UPD] We have optimised the user dashboard by removing useless options and adding only the neccessary ones.<br>
+[DEP] CAuth™️: Confidante™️ CAuth™️ has been removed from this version due to performance issues.<br>
+[DEP] Runner 1.0: Confidante™️ Runner 1.0 has been removed due to uneccessary space occupied by it.<br>
+[DEP] Staff Portal 4 & Django Admin : Due to privacy concerns.<br>
+[DEP] Bootstrap & W3.CSS: We are now styling our websites with in-house CSS.<br>
+
+**Version Code : 2.1.3**<br>
+**Patch Level : P-2024.3.2.7**
+
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
 
