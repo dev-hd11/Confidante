@@ -5,4 +5,4 @@ window.addEventListener("DOMContentLoaded", function() {
         this.document.getElementById("error").textContent = "*Invalid Password";
     }
 });
-// (C) 2023-present, Himank Deka
+// (C) 2023, Himank Deka.

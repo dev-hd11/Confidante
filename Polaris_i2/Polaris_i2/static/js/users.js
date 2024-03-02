@@ -7,5 +7,5 @@ function redirect_to_delete() {
 }
 
 /* 
-(C) 2023 - presemt, Himank.
+(C) 2023, Himank Deka.
  */

@@ -4,3 +4,5 @@ window.addEventListener("DOMContentLoaded", function() {
         this.alert("Invalid data provided!");
     }
 });
+
+//  (C) 2023, Himank Deka.

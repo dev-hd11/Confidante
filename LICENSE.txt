@@ -1,37 +1,60 @@
-Microsoft Public License
+Confidante End User License Agreement (CEULA)
 
-Copyright (c) Himank Deka, 2024.
-All rights Reserved.
+Copyright (c) 2023 Himank Deka and Contributers [Only to their contributed resources]
 
+Definitions:
+"Software" refers to the original work described in this license.
+"Contributions" refer to patches, additions, or modifications to the Software.
+"Malicious versions" refer to any modified versions of the Software intended for harmful purposes.
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software under the following conditions:
 
-This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions, and the following disclaimer.
 
-1. Definitions
-The terms “reproduce,” “reproduction,” “derivative works,” and “distribution” have the
-same meaning here as under Indian copyright law.
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions, and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
 
-A “contribution” is the original software, or any additions or changes to the software.
+3. Any redistribution, use, or modification of the Software in binary form,
+   including but not limited to incorporating the Software into proprietary
+   software, is strictly prohibited without the express written permission
+   of the copyright holder.
 
-A “contributor” is any person that distributes its contribution under this license.
+4. Any use or distribution of the Software that poses a security risk, including
+   but not limited to utilizing cryptographic algorithms, must comply with all
+   applicable laws and regulations regarding encryption and data protection.
 
-“Licensed patents” are a contributor’s patent claims that read directly on its contribution.
+5. The Software may not be used for any unlawful, malicious, or harmful purposes,
+   including but not limited to cyber attacks, unauthorized access to computer systems
+   or networks, or any other activity deemed harmful by the copyright holder.
 
-2. Grant of Rights
+6. The creation of malicious versions of the Software is strictly prohibited.
+   Any such versions will be considered a violation of this license.
 
-(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+7. The Software may not be used for financial or commercial gains without prior
+   written permission from the copyright holder.
 
-(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+8. Users are allowed to make contributions to the original software by submitting
+   patches, additions, or modifications. Any contributions made to the Software
+   will be subject to the terms of this license.
 
-3. Conditions and Limitations
+9. Any derivative works based on the Software, including modifications or additions,
+   must be clearly attributed to the original authors. Failure to provide proper
+   attribution is a violation of this license.
 
-(A) No Trademark License- This license does not grant you rights to use any contributors’ name, logo, or trademarks.
+10. Redistributions of any form must be made exclusively through a publicly accessible
+    version control system, such as GitHub.
 
-(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+By using this Software, you agree to be bound by the terms and conditions of this license.
+If you do not agree with these terms, you are not permitted to use the Software.
 
-(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
-
-(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
-
-(E) The software is licensed “as-is.” You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
-   
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

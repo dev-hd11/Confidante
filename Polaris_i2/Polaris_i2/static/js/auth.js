@@ -6,4 +6,4 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-//(C) 2023 - present, Himank Deka. All rights reserved.
+//(C) 2023, Himank Deka. All rights reserved.
