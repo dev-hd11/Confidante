@@ -49,6 +49,15 @@ We have launched a new variant of Confidante, The Confidante PRO. This version i
 3. WhiteNoise
 
 ## Installation :
+1. Download the latest release.
+2. Navigate to the Polaris_i2 folder.
+3. Run the `shellrunner.bat` file if you are on Windows.
+4. Or type this:
+   ``` bash
+   chmod +x shellrunner.sh
+   ./shellrunner.sh
+   ```
+5. Go to [localhost:8000](http://localhost:8000) on your laptop.
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
