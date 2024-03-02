@@ -16,7 +16,7 @@
 **A Django app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
-This project is now licensed under MS-PL.<br><br><br>
+This project is now licensed under CEULA (See LICENSE).<br><br><br>
 The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
 This repository might not be stable as we are starting the creation of a new version of Confidante here.<br>
 We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
@@ -49,6 +49,15 @@ We have launched a new variant of Confidante, The Confidante PRO. This version i
 3. WhiteNoise
 
 ## Installation :
+1. Download the latest release.
+2. Navigate to the Polaris_i2 folder.
+3. Run the `shellrunner.bat` file if you are on Windows.
+4. Or type this:
+   ``` bash
+   chmod +x shellrunner.sh
+   ./shellrunner.sh
+   ```
+5. Go to [localhost:8000](http://localhost:8000) on your laptop.
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
@@ -132,6 +141,22 @@ This is a pre-view of the latest version of Confidante. Please note that it will
 Version Code: 1.3.1<br>
 
 **Full Changelog**: https://github.com/dev-hd11/Confidante/compare/i1-CARBON-Patched...i2-CARBON-pre1
+
+### Release Polaris™️ i2 CARBON :
+The second release of our software is here! This release includes a whole new UI/UX. The authentication systems are also optimised and the code is more organised. This version comes with the new ShellRunner™️ v1 script.<br>
+
+[ADD] ShellRunner™️ v1: An automation script for running the app without writing any commands.<br>
+[UPD] New UI: A more modern and user friendly UI has been provided.<br>
+[UPD] Django's in-built Authentication: We are now integrating Django's Authentication package in our app for better performance.<br>
+[UPD] We have optimised the user dashboard by removing useless options and adding only the neccessary ones.<br>
+[DEP] CAuth™️: Confidante™️ CAuth™️ has been removed from this version due to performance issues.<br>
+[DEP] Runner 1.0: Confidante™️ Runner 1.0 has been removed due to uneccessary space occupied by it.<br>
+[DEP] Staff Portal 4 & Django Admin : Due to privacy concerns.<br>
+[DEP] Bootstrap & W3.CSS: We are now styling our websites with in-house CSS.<br>
+
+**Version Code : 2.1.3**<br>
+**Patch Level : P-2024.3.2.7**
+
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
 
