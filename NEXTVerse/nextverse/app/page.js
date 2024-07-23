@@ -42,7 +42,6 @@ export default function Home() {
           router.push('/auth')
         }
 
-        console.log('finished')
         res()
       }, 1000)
     });
