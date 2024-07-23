@@ -1,11 +1,20 @@
+// (C) 2024, Himank Deka
 'use client'
 import React, { useRef, useState, useEffect } from 'react'
 import './local.css';
 import { useRouter } from "next/navigation";
+import 'animate.css'
 
 const page = () => {
     useEffect(() => {
         const fetchInfo = async () => {
+            let read = await fetch('/api/data')
+            read = read.json()
+
+            if (read.value != true) {
+                router.push('/')
+                return
+            }
             let allow = await fetch('/api/auth')
             allow = await allow.json()
 
@@ -78,10 +87,10 @@ const page = () => {
 
     return (
         <div className='h-[80vh] exo-2'>
-            <div id='head' className='flex h-[15vh] items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
+            <div id='head' className='flex h-[15vh] animate__animated animate__fadeInDown items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
                 <span className="text-cyan-400 orbitron font-bold">NEXTVerse&trade;</span> <span className='font-semibold'>Authentication</span>
             </div>
-            <div id='form' className='flex flex-col items-center'>
+            <div id='form' className='animate__animated animate__fadeIn animate__delay-1s flex flex-col items-center'>
                 <p className='mt-16 md:text-2xl text-lg'>This is a protected page.</p>
                 <p className='md:text-2xl text-lg'>Please enter the password to proceed.</p>
                 <form action="" className='flex w-full items-center justify-center h-[10vh] mt-20 gap-6'>

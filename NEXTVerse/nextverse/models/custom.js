@@ -1,7 +1,19 @@
-import mongoose  from 'mongoose'
+// (C) 2024, Himank Deka
+import mongoose from 'mongoose';
 
 const customSchema = new mongoose.Schema({
-    name: String
-})
+    name: {
+        type: String,
+        required: true 
+    },
+    last_visited: {
+        type: String,
+        required: true 
+    },
+    entries: {
+        type: Number,
+        required: true 
+    }
+});
 
-export const Custom =  mongoose.models.Custom || mongoose.model('Custom' ,customSchema)
+export const Custom = mongoose.models.Customize || mongoose.model('Customize', customSchema);

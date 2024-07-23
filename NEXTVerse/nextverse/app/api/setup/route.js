@@ -1,3 +1,4 @@
+// (C) 2024, Himank Deka
 'use server'
 import { NextResponse } from 'next/server'
 import { Custom } from '@/models/custom'
@@ -23,10 +24,16 @@ export async function POST(request) {
     try {
         await connectDB()
 
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        const dateObj = new Date()
+        const dateStr = `${dateObj.getDate()} ${months[dateObj.getMonth()]}, ${dateObj.getFullYear()}`
+
         let data = await request.json()
 
         const custom = new Custom({
-            name: data.name
+            name: data.name,
+            last_visited: dateStr,
+            entries: 0
         })
 
         await custom.save()

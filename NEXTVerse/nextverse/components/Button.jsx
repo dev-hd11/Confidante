@@ -1,4 +1,4 @@
-
+// (C) 2024, Himank Deka
 import React, { useRef } from 'react';
 
 export const baseStyle = `rounded-lg py-3 px-6 flex justify-center items-center font-sans text-xs font-bold uppercase border border-transparent hover:bg-transparent transition-all duration-300`;

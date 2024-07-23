@@ -1,3 +1,4 @@
+// (C) 2024, Himank Deka
 import React from 'react'
 
 const Footer = ({app}) => {

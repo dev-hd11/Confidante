@@ -1,3 +1,4 @@
+// (C) 2024, Himank Deka
 'use client'
 import React, { useEffect } from 'react'
 import '@/app/auth/local.css';
@@ -59,10 +60,10 @@ const page = () => {
         <>
             <Navigation notHome={true} />
             <div className='h-[80vh] exo-2'>
-                <div id='head' className='flex h-[15vh] items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
+                <div id='head' className=' animate__animated animate__fadeInDown flex h-[15vh] items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
                     <span className='font-semibold'>Welcome to </span><span className="text-cyan-400 orbitron font-bold">NEXTVerse&trade;</span>
                 </div>
-                <div id='form' className='flex flex-col items-center'>
+                <div id='form' className=' animate__animated animate__fadeIn animate__delay-1s flex flex-col items-center'>
                     <p className='mt-16 md:text-2xl text-lg'>Thanks for choosing us!</p>
                     <p className='md:text-2xl text-lg'>Please enter your name so that we can customize your experience.</p>
                     <form onSubmit={handleSubmit(onSubmit)} action="" className='flex flex-col w-full items-center my-14 h-[10vh] gap-6'>

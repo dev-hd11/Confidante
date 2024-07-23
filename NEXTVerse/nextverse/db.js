@@ -1,3 +1,5 @@
+// (C) 2024, Himank Deka
+
 import mongoose from 'mongoose'
 
 let isConnected = false

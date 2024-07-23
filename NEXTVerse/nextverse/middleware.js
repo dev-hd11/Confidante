@@ -1,3 +1,5 @@
+// (C) 2024, Himank Deka
+
 import { NextResponse } from 'next/server'
 
 export async function middleware(request) {

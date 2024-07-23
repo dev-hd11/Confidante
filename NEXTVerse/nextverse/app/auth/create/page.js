@@ -1,3 +1,4 @@
+// (C) 2024, Himank Deka
 'use client'
 import React, { useState, useEffect } from 'react'
 import '@/app/auth/local.css';
@@ -8,7 +9,15 @@ import Button, { style2, removeAnimation } from '@/components/Button';
 const page = () => {
 
     useEffect(() => {
+        
         const fetchInfo = async () => {
+            let read = await fetch('/api/data')
+            read = read.json()
+
+            if (read.value != true) {
+                router.push('/')
+                return
+            }
             let allow = await fetch('/api/auth')
             allow = await allow.json()
 
@@ -82,10 +91,10 @@ const page = () => {
 
     return (
         <div className='h-[80vh] exo-2'>
-            <div id='head' className='flex h-[15vh] items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
+            <div id='head' className='flex h-[15vh]  animate__animated animate__fadeInDown items-center justify-center border-b border-b-red-500 gap-4 md:text-3xl text-xl'>
                 <span className="text-cyan-400 orbitron font-bold">NEXTVerse&trade;</span> <span className='font-semibold'>Authentication</span>
             </div>
-            <div id='form' className='flex flex-col items-center'>
+            <div id='form' className='flex flex-col items-center  animate__animated animate__fadeIn animate__delay-1s'>
                 <p className='mt-16 md:text-2xl text-lg'>Welcome to Confidante!</p>
                 <p className='md:text-2xl text-lg'>Please set a password for securing your account.</p>
                 <form action="" className='flex flex-col w-full items-center my-14 h-[10vh] gap-6'>

@@ -1,3 +1,4 @@
+// (C) 2024, Himank Deka
 'use server'
 import { NextResponse } from 'next/server'
 import { User } from '@/models/user'

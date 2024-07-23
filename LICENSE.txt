@@ -1,6 +1,6 @@
 Confidante End User License Agreement (CEULA)
 
-Copyright (c) 2023 Himank Deka and Contributers [Only to their contributed resources]
+Copyright (c) 2023 - present Himank Deka and Contributers [Only to their contributed resources]
 
 Definitions:
 "Software" refers to the original work described in this license.
@@ -21,7 +21,7 @@ in the Software under the following conditions:
 3. Any redistribution, use, or modification of the Software in binary form,
    including but not limited to incorporating the Software into proprietary
    software, is strictly prohibited without the express written permission
-   of the copyright holder.
+   of the copyright holder(s).
 
 4. Any use or distribution of the Software that poses a security risk, including
    but not limited to utilizing cryptographic algorithms, must comply with all
@@ -29,13 +29,13 @@ in the Software under the following conditions:
 
 5. The Software may not be used for any unlawful, malicious, or harmful purposes,
    including but not limited to cyber attacks, unauthorized access to computer systems
-   or networks, or any other activity deemed harmful by the copyright holder.
+   or networks, or any other activity deemed harmful by the copyright holder(s).
 
 6. The creation of malicious versions of the Software is strictly prohibited.
    Any such versions will be considered a violation of this license.
 
 7. The Software may not be used for financial or commercial gains without prior
-   written permission from the copyright holder.
+   written permission from the copyright holder(s).
 
 8. Users are allowed to make contributions to the original software by submitting
    patches, additions, or modifications. Any contributions made to the Software
@@ -54,7 +54,7 @@ If you do not agree with these terms, you are not permitted to use the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+AUTHORS OR COPYRIGHT holder(s)S BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
