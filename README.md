@@ -1,30 +1,25 @@
 ![Logo](docs/confidante-high-resolution-logo.png)
 
-![GitHub version](https://img.shields.io/badge/CARBON%20version-Polaris%20i2-blue)
-![Stable version](https://img.shields.io/badge/Stable%20GitHub%20version-Polaris%20i1%20CARBON-blue)
+![GitHub version](https://img.shields.io/badge/NEXTVerse%20version-Nitro%202024-blue)
+![Stable version](https://img.shields.io/badge/Stable%20GitHub%20version-NEXTVerse%20Nitro%202024-blue)
 ![Best version](https://img.shields.io/badge/PRO%20version-Zeus%20I-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
 ![GitHub License](https://img.shields.io/github/license/dev-hd11/Confidante)
 ![GitHub top language](https://img.shields.io/github/languages/top/dev-hd11/Confidante)
-![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
-![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=plastic)
+![Next.js Badge](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=plastic)
+![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square)
 ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/dev-hd11/Confidante/django.yml)
 ![GitHub tag checks state](https://img.shields.io/github/checks-status/dev-hd11/Confidante/v0.5.1)
 
 
-**A Django app to maintain your diary entries. Secured with encryption and authentication system.**
+**A NEXT.js app to maintain your diary entries. Secured with encryption and authentication system.**
 
 ## Alert
 This project is now licensed under CEULA (See LICENSE).<br><br><br>
 
 **Now the PRO version is deprecated.** <br>
-The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
-This repository might not be stable as we are starting the creation of a new version of Confidante here.<br>
-We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
-
-![Pic](docs/confidante-pro-high-resolution-logo.png)
-
 
 
 ## Table of Content :
@@ -38,28 +33,32 @@ We have launched a new variant of Confidante, The Confidante PRO. This version i
 
 ## Features :
 - Secure
-- Encrypted
-- Multiple users supported
-- Entry creation system
+- Entry management features
+- Single users support
+- Filtering, sorting and searching features
 - Account management system
 - User Friendly UI
 - Privacy
 
 ## Dependencies :
-1. Python 3.11 or 3.12
-2. Django
-3. WhiteNoise
+1. Node.js & npm
 
 ## Installation :
 1. Download the latest release.
-2. Navigate to the Polaris_i2 folder.
-3. Run the `shellrunner.bat` file if you are on Windows.
-4. Or type this:
-   ``` bash
-   chmod +x shellrunner.sh
-   ./shellrunner.sh
+2. Navigate to NEXTVerse/nextverse
+3. Run the `install.bat` or type <br>
+   ```cmd
+   npm i
    ```
-5. Go to [localhost:8000](http://localhost:8000) on your laptop.
+   in the terminal
+4. Run the `startserver.bat` or type <br>
+   ```cmd
+   npm run dev
+
+   ```
+   in the terminal
+
+5. Go to [http://localhost:3000](http://localhost:3000) on your device.
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
@@ -158,6 +157,21 @@ The second release of our software is here! This release includes a whole new UI
 
 **Version Code : 2.1.3**<br>
 **Patch Level : P-2024.3.2.7**
+
+### Release NEXTVERSE™️ Nitro (2024) :
+Confidante™️ is now built with **NEXT.js** to create **NEXTVerse**. This release has a whole new set of features and improvements. <br>
+
+**What's New?**
+
+- New cleaner, improved and refined UI. Better than ever.
+- Secured with **NEXTVerse™️Authentication**. Security guaranteed.
+- New features for managing entries. Includes filtering, sorting and searching.
+- Support for **Markdown** in entries [BETA]. Also entries can be updated.
+- New Dark/Light mode feature. For more customized experience.
+- A new user dashboard. For getting insights into your activity.
+
+**Version Code: 2024.1.0**<br>
+**Security Level: NEXTVerse™ Authentication Patch 0 (Base)**
 
 ## Contributing :
 See [CONTRIBUTING](./CONTRIBUTING.md).
