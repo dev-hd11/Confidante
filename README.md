@@ -1,7 +1,7 @@
 ![Logo](docs/confidante-high-resolution-logo.png)
 
-![GitHub version](https://img.shields.io/badge/CARBON%20version-Polaris%20i2-blue)
-![Stable version](https://img.shields.io/badge/Stable%20GitHub%20version-Polaris%20i1%20CARBON-blue)
+![GitHub version](https://img.shields.io/badge/NEXTVerse%20version-Nitro%202024-blue)
+![Stable version](https://img.shields.io/badge/Stable%20GitHub%20version-NEXTVerse%20Nitro%202024-blue)
 ![Best version](https://img.shields.io/badge/PRO%20version-Zeus%20I-blue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dev-hd11/Confidante)
 ![GitHub License](https://img.shields.io/github/license/dev-hd11/Confidante)
@@ -20,12 +20,6 @@
 This project is now licensed under CEULA (See LICENSE).<br><br><br>
 
 **Now the PRO version is deprecated.** <br>
-The latest releases of the PRO version will be available on [TechWorld](https://techworld856.godaddysites.com). Please go there to download them.<br>
-This repository might not be stable as we are starting the creation of a new version of Confidante here.<br>
-We have launched a new variant of Confidante, The Confidante PRO. This version is better than the normal versions. This versions will be available exclusively on [TechWorld](https://techworld856.godaddysites.com).
-
-![Pic](docs/confidante-pro-high-resolution-logo.png)
-
 
 
 ## Table of Content :
