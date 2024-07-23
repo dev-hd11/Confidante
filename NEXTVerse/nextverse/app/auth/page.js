@@ -8,13 +8,7 @@ import 'animate.css'
 const page = () => {
     useEffect(() => {
         const fetchInfo = async () => {
-            let read = await fetch('/api/data')
-            read = read.json()
-
-            if (read.value != true) {
-                router.push('/')
-                return
-            }
+            
             let allow = await fetch('/api/auth')
             allow = await allow.json()
 

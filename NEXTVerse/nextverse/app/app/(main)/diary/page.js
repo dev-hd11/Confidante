@@ -450,12 +450,12 @@ const Page = () => {
               >
                 {item.title}
                 <div>
-                  <span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full p-2 cursor-pointer' : 'hidden'} onClick={() => {
+                  <abbr title="Open"><span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full p-2 cursor-pointer' : 'hidden'} onClick={() => {
                     displayEntry(item.title, item.content, item.created_at, item.starred)
                     setOut('')
-                  }}>publish</span>
-                  <span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full p-2 cursor-pointer' : 'hidden'} onClick={() => { del(item.en_id, item.title) }}>delete</span>
-                  <span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full mr-2 p-2 cursor-pointer no-fill' : 'hidden'} onClick={() => { router.push(`/app/write/update?id=${item.en_id}`) }}>edit</span>
+                  }}>publish</span></abbr>
+                  <abbr title="Delete"><span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full p-2 cursor-pointer' : 'hidden'} onClick={() => { del(item.en_id, item.title) }}>delete</span></abbr>
+                  <abbr title="Edit"><span className={item.selected ? 'material-symbols-outlined transition-all duration-300 hover:bg-slate-600 rounded-full mr-2 p-2 cursor-pointer no-fill' : 'hidden'} onClick={() => { router.push(`/app/write/update?id=${item.en_id}`) }}>edit</span></abbr>
                   <span
                     onClick={() => { fav(item.en_id, item.starred, item.title) }}
                     className={!(item.starred) ? "material-symbols-outlined transition-all duration-300 hover:text-red-700 cursor-pointer" : "hidden"}

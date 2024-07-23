@@ -30,7 +30,7 @@ const Navigation = ({ notHome }) => {
                         <p className='my-3 font-semibold font-mono'>UI Theme: Dark</p>
                         <p className='my-3 font-semibold font-mono'>Security Level: NEXTVerse&trade; Authentication Patch 0 (Base)</p>
                         <p className='my-3 font-semibold font-mono'>License: <a href="/license" className='text-cyan-500 hover:underline'>View</a></p>
-                        <p className='my-3 font-semibold font-mono'>Release Date: NA</p>
+                        <p className='my-3 font-semibold font-mono'>Release Date: 23 July, 2024</p>
                     </div>
                 </div>
             </div>
