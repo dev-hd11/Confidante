@@ -26,11 +26,11 @@ const Navigation = ({ notHome }) => {
                     <h1 className='text-3xl font-bold p-5 border-b flex items-center justify-center'>App Information</h1>
                     <div className='p-4'>
                         <p className='my-3 font-semibold font-mono'>Version Name: NEXTVerse&trade; Nitro (2024)</p>
-                        <p className='my-3 font-semibold font-mono'>Version Code: 2024.1.0</p>
+                        <p className='my-3 font-semibold font-mono'>Version Code: 2024.1.1</p>
                         <p className='my-3 font-semibold font-mono'>UI Theme: Dark</p>
                         <p className='my-3 font-semibold font-mono'>Security Level: NEXTVerse&trade; Authentication Patch 0 (Base)</p>
                         <p className='my-3 font-semibold font-mono'>License: <a href="/license" className='text-cyan-500 hover:underline'>View</a></p>
-                        <p className='my-3 font-semibold font-mono'>Release Date: 23 July, 2024</p>
+                        <p className='my-3 font-semibold font-mono'>Release Date: 24 July, 2024</p>
                     </div>
                 </div>
             </div>
