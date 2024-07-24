@@ -36,3 +36,8 @@ h3 {
 a {
     color: aqua
 }
+
+.play {
+    font-family: "Playwrite FR Trad", cursive;
+    font-style: normal;
+}

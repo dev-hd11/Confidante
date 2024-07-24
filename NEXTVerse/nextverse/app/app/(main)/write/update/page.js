@@ -91,7 +91,7 @@ const Page = () => {
     <>
       <div className="screen-style">
         <div id="head" className="animate__animated animate__fadeInDown w-[85vw] justify-between h-[15vh] flex border-b">
-          <h1 className="w-1/2 flex px-10 items-center h-full text-3xl text-red-600 font-bold">
+          <h1 className="w-1/2 chakra-petch flex px-10 items-center bg-gradient-to-r from-purple-300 via-purple-600 to-purple-700 text-transparent bg-clip-text h-full text-3xl font-bold">
             Update
           </h1>
           <div className='flex gap-2 px-6 justify-center items-center text-xl '>

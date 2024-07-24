@@ -172,7 +172,7 @@ const Page = () => {
 
     const date = new Date()
 
-    if (date.getHours() > 17) {
+    if (date.getHours() > 17 || date.getHours() < 5) {
       setDarkMode(true)
     }
   }, [searchParams]);
@@ -347,7 +347,7 @@ const Page = () => {
         </div>
       </div>
       <div id="head" className="animate__animated animate__fadeInDown w-[85vw] justify-between h-[15vh] flex border-b">
-        <h1 className={"flex px-10 items-center h-full text-3xl text-red-600 font-bold"}>
+        <h1 className={"flex px-10 items-center play h-full text-xl bg-gradient-to-r from-purple-200 via-purple-500 to-purple-800 text-transparent bg-clip-text font-bold"}>
           {usName}'s Diary
         </h1>
         <div className="flex items-center h-full">
@@ -414,7 +414,7 @@ const Page = () => {
           <div id={'search'} className={'mr-10 flex'}>
             <button onClick={() => {
               setSearch(!search)
-            }} className="disabled:opacity-50 disabled:hover:text-white hover:text-cyan-500 disabled:cursor-not-allowed cursor-pointer" disabled={disabled}><span className="mr-5 material-symbols-outlined scale-125 transition-all duration-300">search</span></button>
+            }} className={"disabled:opacity-50 disabled:hover:text-white " + (search ? "hover:text-red-500" : "hover:text-cyan-500") + " disabled:cursor-not-allowed cursor-pointer"} disabled={disabled}><span className="mr-5 material-symbols-outlined scale-125 transition-all duration-300">{search ? 'close' : 'search'}</span></button>
             <input type="text" placeholder="Search..." onKeyUp={() => { searchEn() }} ref={svalue} className={out + "animate__animated animate__fadeInRight font-semibold exo-2 border-b-2 focus:hover:opacity-100 focus:text-cyan-500 focus:border-b-cyan-500 focus:placeholder-cyan-500 transition-all duration-300 text-lg w-[30vw] hover:opacity-50 bg-transparent" + (search ? '' : ' hidden')} />
           </div>
         </div>
