@@ -42,23 +42,25 @@ This project is now licensed under CEULA (See LICENSE).<br><br><br>
 
 ## Dependencies :
 1. Node.js & npm
+2. MongoDB
 
 ## Installation :
-1. Download the latest release.
-2. Navigate to NEXTVerse/nextverse
-3. Run the `install.bat` or type <br>
+1. Download the dependencies.
+2. Download the latest release.
+3. Navigate to NEXTVerse/nextverse
+4. Run the `install.bat` or type <br>
    ```cmd
    npm i
    ```
    in the terminal
-4. Run the `startserver.bat` or type <br>
+5. Run the `startserver.bat` or type <br>
    ```cmd
    npm run dev
 
    ```
    in the terminal
 
-5. Go to [http://localhost:3000](http://localhost:3000) on your device.
+6. Go to [http://localhost:3000](http://localhost:3000) on your device.
 
 ## Copyright :
 See [COPYRIGHTS](./COPYRIGHTS.md)
